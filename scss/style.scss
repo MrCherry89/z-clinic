@@ -998,6 +998,10 @@
               font-size: 12px;
               padding: 6px 10px;
             }
+            &:hover {
+              background: $black;
+              color: white;
+            }
           }
         }
       }
@@ -1039,6 +1043,9 @@
             border-radius: 20px;
             padding: 20px 12px;
             height: 65vw;
+          }
+          &:hover {
+            transform: scale(1.02);
           }
           .price {
             margin-top: auto;
@@ -1501,6 +1508,9 @@
               }
             }
           }
+        }
+        &.active a {
+          color: rgba(31, 31, 41, 0.3);
         }
       }
     }
@@ -2416,6 +2426,9 @@
                   margin-bottom: 16px;
                   @media (max-width: 1200px) {
                     font-size: 20px;
+                  }
+                  &:hover {
+                    color: $purple;
                   }
                 }
                 p {

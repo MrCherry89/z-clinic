@@ -920,6 +920,9 @@ button:focus {
     min-height: auto;
   }
 }
+.personal-item .info-wrap .name:hover {
+  color: #823af8;
+}
 
 @font-face {
   font-family: "TT Hoves";
@@ -2427,6 +2430,10 @@ button:focus {
     padding: 6px 10px;
   }
 }
+.our-services .wrapper .our-services-top .tags li a:hover {
+  background: #1f1f29;
+  color: white;
+}
 .our-services .wrapper .all-services .black-btn {
   width: 100%;
 }
@@ -2480,6 +2487,9 @@ button:focus {
     padding: 20px 12px;
     height: 65vw;
   }
+}
+.our-services .wrapper .all-services .all-services-items .all-services-item:hover {
+  transform: scale(1.02);
 }
 .our-services .wrapper .all-services .all-services-items .all-services-item .price {
   margin-top: auto;
@@ -3051,6 +3061,9 @@ button:focus {
   .header .wrapper .main-menu > li.drop-item .drop-menu-wrap .sub-menu > li .sub-menu2 > li .sub-menu3 li > a:hover {
     color: #1f1f29;
   }
+}
+.header .wrapper .main-menu > li.active a {
+  color: rgba(31, 31, 41, 0.3);
 }
 
 .error-wrap {
@@ -4215,6 +4228,9 @@ button:focus {
   .sales-block .wrapper .sales-tab-wrap .tab-content .tab-content-item .stock-items .stock-item .text-wrap > a {
     font-size: 20px;
   }
+}
+.sales-block .wrapper .sales-tab-wrap .tab-content .tab-content-item .stock-items .stock-item .text-wrap > a:hover {
+  color: #823af8;
 }
 .sales-block .wrapper .sales-tab-wrap .tab-content .tab-content-item .stock-items .stock-item .text-wrap p {
   font-size: 16px;

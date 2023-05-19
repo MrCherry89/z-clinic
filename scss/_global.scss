@@ -721,6 +721,9 @@ button {
       @media (max-width: 767px) {
         min-height: auto;
       }
+      &:hover {
+        color: $purple;
+      }
     }
   }
 }
