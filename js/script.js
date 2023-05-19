@@ -27,10 +27,29 @@ $(document).ready(function () {
     ),
   });
 
+  $(".sales-slider").slick({
+    dots: true,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    fade: true,
+    prevArrow: $(".sales-slider-wrap .slider-navigation .slick-prev"),
+    nextArrow: $(".sales-slider-wrap .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   $(".unique-slider").slick({
     dots: false,
     infinite: true,
     speed: 700,
+
     slidesToShow: 2,
     prevArrow: $(".unique-slider-wrap .slider-navigation .slick-prev"),
     nextArrow: $(".unique-slider-wrap .slider-navigation .slick-next"),
