@@ -231,6 +231,54 @@ button {
   transform: translateY(1px) rotate(-45deg);
 }
 
+.social {
+  @include flex;
+  li {
+    margin-right: 16px;
+    @media (max-width: 767px) {
+      margin-right: 8px;
+    }
+    a {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      @include flex;
+      background: rgba(0, 0, 0, 0.1);
+      @media (max-width: 1200px) {
+        width: 56px;
+        height: 56px;
+      }
+      @media (max-width: 1024px) {
+        width: 50px;
+        height: 50px;
+      }
+      @media (max-width: 767px) {
+        width: 32px;
+        height: 32px;
+      }
+      img {
+        margin: auto;
+        transition: 0.3s;
+        @media (max-width: 1200px) {
+          width: 27px;
+        }
+        @media (max-width: 1024px) {
+          width: 22px;
+        }
+        @media (max-width: 767px) {
+          width: 16px;
+        }
+      }
+      &:hover {
+        background: lighten($purple, 30%);
+        img {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}
+
 .footer {
   background: $gray;
   @media (max-width: 767px) {
@@ -383,53 +431,6 @@ button {
           }
           @media (max-width: 767px) {
             font-size: 18px;
-          }
-        }
-        .social {
-          @include flex;
-          li {
-            margin-right: 16px;
-            @media (max-width: 767px) {
-              margin-right: 8px;
-            }
-            a {
-              width: 64px;
-              height: 64px;
-              border-radius: 50%;
-              @include flex;
-              background: rgba(0, 0, 0, 0.1);
-              @media (max-width: 1200px) {
-                width: 56px;
-                height: 56px;
-              }
-              @media (max-width: 1024px) {
-                width: 50px;
-                height: 50px;
-              }
-              @media (max-width: 767px) {
-                width: 32px;
-                height: 32px;
-              }
-              img {
-                margin: auto;
-                transition: 0.3s;
-                @media (max-width: 1200px) {
-                  width: 27px;
-                }
-                @media (max-width: 1024px) {
-                  width: 22px;
-                }
-                @media (max-width: 767px) {
-                  width: 16px;
-                }
-              }
-              &:hover {
-                background: lighten($purple, 30%);
-                img {
-                  transform: rotate(360deg);
-                }
-              }
-            }
           }
         }
       }

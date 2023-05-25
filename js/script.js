@@ -27,6 +27,25 @@ $(document).ready(function () {
     ),
   });
 
+  $(".walk-clinic-slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    arrows: true,
+    prevArrow: $(".walk-clinic-slider-wrap  .slider-navigation .slick-prev"),
+    nextArrow: $(".walk-clinic-slider-wrap  .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   $(".sales-slider").slick({
     dots: true,
     infinite: true,
