@@ -151,6 +151,24 @@ button {
   }
 }
 
+.black-btn {
+  @include inline-flex;
+  @include align-center;
+  @include justify-center;
+  font-size: 18px;
+  font-weight: 600;
+  color: $black;
+  padding: 15px 30px;
+  background: white;
+  border-radius: 14px;
+  border: 2px solid $black;
+  &:hover {
+    border-color: white;
+    background: $black;
+    color: white;
+  }
+}
+
 .purple2-btn {
   @include inline-flex;
   @include align-center;

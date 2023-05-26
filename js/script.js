@@ -39,6 +39,39 @@ $(document).ready(function () {
     ),
   });
 
+  $(".colleagues-slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    variableWidth: true,
+    prevArrow: $(
+      ".colleagues-slider-wrap .title-wrap .slider-navigation .slick-prev"
+    ),
+    nextArrow: $(
+      ".colleagues-slider-wrap .title-wrap .slider-navigation .slick-next"
+    ),
+  });
+
+  $(".certificates-slider").slick({
+    dots: false,
+    arroews: true,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 3,
+    prevArrow: $(".certificates-slider-wrap  .slider-navigation .slick-prev"),
+    nextArrow: $(".certificates-slider-wrap  .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   $(".reviews-slider").slick({
     dots: false,
     infinite: true,
