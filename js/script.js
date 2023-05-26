@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  $(".popup").magnificPopup({
+    type: "inline",
+    mainClass: "mfp-fade",
+  });
+
   $(".blog-slider").slick({
     dots: false,
     infinite: true,
