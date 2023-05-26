@@ -737,6 +737,91 @@ label.error {
   }
 }
 
+.accordion-list {
+  li {
+    background: #f4f5f6;
+    border-radius: 24px;
+    margin-bottom: 16px;
+    @media (max-width: 767px) {
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .item-heading {
+      @include flex;
+      padding: 30px 70px 30px 40px;
+      position: relative;
+      cursor: pointer;
+      @media (max-width: 767px) {
+        padding: 12px;
+        padding-right: 40px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120%;
+      }
+      span {
+        position: relative;
+        @include flex;
+        width: 24px;
+        height: 24px;
+        transition: 0.3s;
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
+        @media (max-width: 767px) {
+          right: 20px;
+          width: 16px;
+          height: 16px;
+        }
+        &:after {
+          content: "";
+          background: url(../img/plus-icon.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          width: 24px;
+          height: 24px;
+          transition: 0.3s;
+          position: absolute;
+          top: 0;
+          left: 0;
+          @media (max-width: 767px) {
+            width: 16px;
+            height: 16px;
+          }
+        }
+        &.rotate {
+          &:after {
+            background: url(../img/minus-icon.png);
+          }
+        }
+      }
+    }
+    .item-body {
+      padding: 0 70px 40px;
+      display: none;
+      @media (max-width: 767px) {
+        padding: 0 12px 24px;
+      }
+      .text-wrap {
+        p {
+          font-size: 22px;
+          line-height: 150%;
+          @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
 #read-popup {
   max-width: 686px;
   width: 100%;

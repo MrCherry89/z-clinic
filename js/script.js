@@ -4,6 +4,27 @@ $(document).ready(function () {
     mainClass: "mfp-fade",
   });
 
+  $(".accordion-list-item .item-heading").on("click", function (e) {
+    e.preventDefault();
+    if ($(this).find("span").hasClass("rotate")) {
+      $(this).find("span").removeClass("rotate");
+    } else {
+      $(".accordion-list-item span").removeClass("rotate");
+      $(this).find("span").addClass("rotate");
+    }
+    $(".accordion-list-item").removeClass("opened");
+    $(".item-body").removeClass("active");
+    $(this)
+      .closest(".accordion-list-item")
+      .find(".item-body")
+      .addClass("active");
+    $(this).closest(".accordion-list-item").addClass("opened");
+    $(".item-body:not(.active)").slideUp();
+    $(".accordion-list-item:not(.opened)").removeClass("active");
+    $(this).closest(".accordion-list-item").find(".item-body").slideToggle();
+    $(this).closest(".accordion-list-item").toggleClass("active");
+  });
+
   $(".blog-slider").slick({
     dots: false,
     infinite: true,
