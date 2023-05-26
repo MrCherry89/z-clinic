@@ -187,6 +187,17 @@ $(document).ready(function () {
     $(this).find(".sub-menu2").toggleClass("show");
   });
 
+  $(".form").validate({
+    rules: {
+      phone: {
+        required: true,
+      },
+      name: {
+        required: true,
+      },
+    },
+  });
+
   $(".phone-number-input").inputmask({
     mask: "+7 (999) 999 - 99 - 99",
   });

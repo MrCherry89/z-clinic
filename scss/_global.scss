@@ -231,6 +231,14 @@ button {
   transform: translateY(1px) rotate(-45deg);
 }
 
+input.error {
+  border-color: red !important;
+}
+
+label.error {
+  display: none !important;
+}
+
 .social {
   @include flex;
   li {
