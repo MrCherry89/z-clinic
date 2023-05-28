@@ -173,7 +173,30 @@ button:focus {
   color: white;
 }
 
-.black-btn {
+.green-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: #0cb553;
+  padding: 15px 30px;
+  border-radius: 14px;
+  border: 2px solid #0cb553;
+}
+.green-btn:hover {
+  background: white;
+  color: #0cb553;
+}
+
+.black2-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -191,7 +214,7 @@ button:focus {
   border-radius: 14px;
   border: 2px solid #1f1f29;
 }
-.black-btn:hover {
+.black2-btn:hover {
   border-color: white;
   background: #1f1f29;
   color: white;
@@ -1098,6 +1121,603 @@ label.error {
   font-weight: 500;
   font-size: 14px;
   color: #828286;
+}
+
+.prices-wrapper {
+  margin: 100px auto 80px;
+}
+@media (max-width: 767px) {
+  .prices-wrapper {
+    margin: 40px auto;
+  }
+}
+
+.portfolio-wrap {
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .portfolio-wrap {
+    margin-top: 30px;
+  }
+}
+.portfolio-wrap .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.portfolio-wrap .wrapper .portfolio-info {
+  max-width: 924px;
+  width: 100%;
+  margin-right: 30px;
+}
+@media (max-width: 1024px) {
+  .portfolio-wrap .wrapper .portfolio-info {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+.portfolio-wrap .wrapper .portfolio-info h1 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 105%;
+  margin-bottom: 36px;
+}
+@media (max-width: 1024px) {
+  .portfolio-wrap .wrapper .portfolio-info h1 {
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-wrap .wrapper .portfolio-info h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+}
+.portfolio-wrap .wrapper .portfolio-info > p {
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 60px;
+}
+@media (max-width: 1024px) {
+  .portfolio-wrap .wrapper .portfolio-info > p {
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-wrap .wrapper .portfolio-info > p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+}
+.portfolio-wrap .wrapper .portfolio-info .tab-menu {
+  margin-bottom: 32px;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.portfolio-wrap .wrapper .portfolio-info .tab-menu li {
+  margin-bottom: 8px;
+}
+.portfolio-wrap .wrapper .portfolio-info .tab-content .tab-content-item .cost-item {
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .portfolio-wrap .wrapper .portfolio-info .tab-content .tab-content-item .cost-item {
+    margin-bottom: 20px;
+  }
+}
+.portfolio-wrap .wrapper .portfolio-info .tab-content .tab-content-item .cost-item:last-child {
+  margin-bottom: 0;
+}
+
+.clinic-prices-wrap {
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap {
+    margin-top: 30px;
+  }
+}
+.clinic-prices-wrap .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info {
+  max-width: 950px;
+  width: 100%;
+  margin-right: 30px;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info h1 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 105%;
+  margin-bottom: 32px;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info h1 {
+    font-size: 34px;
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info > p {
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info > p .green-text {
+  color: #0cb553;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info > p {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 22px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li:last-child {
+  margin-bottom: 0;
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li img {
+  margin-right: 10px;
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .links {
+  margin: 60px 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .links {
+    margin: 40px 0;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .links a {
+  padding: 10px 16px;
+  font-size: 20px;
+  line-height: 130%;
+  background: #f4f5f6;
+  border-radius: 56px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .links a {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .links a {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .links a:hover {
+  background: #1f1f29;
+  color: white;
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item {
+  margin-bottom: 48px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item {
+    margin-bottom: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3 {
+    font-size: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3.purple-text {
+  color: #823af8;
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top .special-price {
+  background: linear-gradient(269.3deg, #0cb553 3.11%, #b76fff 101.81%);
+  border-radius: 4px;
+  padding: 7px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  transition: 0.3s;
+  border: 1px solid rgba(31, 31, 41, 0.07);
+  border-left: 0;
+  border-right: 0;
+  margin-top: -1px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap {
+    padding: 12px 0;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a {
+  font-size: 20px;
+  line-height: 120%;
+  position: relative;
+  margin-right: 10px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a {
+    font-size: 14px;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed rgba(31, 31, 41, 0.2);
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price {
+  font-size: 20px;
+  white-space: nowrap;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price {
+    font-size: 14px;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price {
+  margin-left: auto;
+  margin-right: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  text-decoration: line-through;
+  color: #828286;
+  white-space: nowrap;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price {
+    font-size: 18px;
+    margin-right: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price {
+    font-size: 14px;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #823af8;
+  font-size: 20px;
+  white-space: nowrap;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price {
+    font-size: 14px;
+  }
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price img {
+  margin-right: 8px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price img {
+    width: 16px;
+  }
+}
+@media (min-width: 1025px) {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover {
+    background: #f4f5f6;
+    border-color: #f4f5f6;
+  }
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover a {
+    color: #8000ff;
+  }
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover a:after {
+    border-color: rgba(128, 0, 255, 0.2);
+  }
+}
+
+.beer-handle {
+  background: white;
+}
+
+.cost-item {
+  background: #f4f5f6;
+  border-radius: 30px;
+}
+@media (max-width: 767px) {
+  .cost-item {
+    border-radius: 20px;
+  }
+}
+.cost-item .beer-slider {
+  width: 100%;
+  border-radius: 30px;
+  height: 460px;
+  margin-bottom: 24px;
+}
+@media (max-width: 1024px) {
+  .cost-item .beer-slider {
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .cost-item .beer-slider {
+    height: 250px;
+    margin-bottom: 0;
+    border-radius: 20px;
+  }
+}
+.cost-item .beer-slider img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.cost-item .text-wrap {
+  padding: 30px;
+  padding-top: 0;
+}
+@media (max-width: 767px) {
+  .cost-item .text-wrap {
+    padding: 16px;
+  }
+}
+.cost-item .text-wrap p {
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .cost-item .text-wrap p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.cost-item .text-wrap .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .cost-item .text-wrap .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.cost-item .text-wrap .bottom .purple-btn {
+  margin-left: auto;
+  opacity: 0;
+}
+@media (max-width: 767px) {
+  .cost-item .text-wrap .bottom .purple-btn {
+    margin: 0;
+    margin-top: 16px;
+    opacity: 1;
+  }
+}
+.cost-item .text-wrap .bottom .style-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px 12px 8px 12px;
+  align-self: flex-start;
+  font-weight: 500;
+  font-size: 16px;
+  color: #8000ff;
+  margin-right: 16px;
+  background: #ead4ff;
+  border-radius: 1000px;
+  margin-bottom: 8px;
+}
+.cost-item .text-wrap .bottom .style-link:hover {
+  color: white;
+  background: #8000ff;
+}
+.cost-item .text-wrap .bottom .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  align-self: flex-start;
+  background: #ffffff;
+  border-radius: 1000px;
+  padding: 4px 12px 4px 8px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.cost-item .text-wrap .bottom .time img {
+  margin-right: 6px;
+}
+.cost-item:hover .text-wrap .purple-btn {
+  opacity: 1;
+}
+
+.request-estimate {
+  background: #f4f5f6;
+  border-radius: 24px;
+  padding: 32px;
+  width: 330px;
+  min-width: 330px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 30px;
+  align-self: flex-start;
+}
+@media (max-width: 1024px) {
+  .request-estimate {
+    display: none;
+  }
+}
+.request-estimate .style-img {
+  position: absolute;
+  top: 30px;
+  right: -20px;
+}
+.request-estimate h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  margin-bottom: 16px;
+  max-width: 230px;
+}
+.request-estimate > p {
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+.request-estimate form {
+  width: 100%;
+}
+.request-estimate form input {
+  width: 100%;
+  height: 56px;
+  border-radius: 14px;
+  background: white;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #828286;
+  padding: 0 20px;
+}
+.request-estimate form button {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.request-estimate form p {
+  color: #828286;
+  font-size: 14px;
+  line-height: 120%;
+}
+.request-estimate form p a {
+  position: relative;
+  color: #828286;
+  font-size: 14px;
+}
+.request-estimate form p a:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  transition: 0.3s;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #828286;
+}
+.request-estimate form p a:hover:after {
+  opacity: 0;
 }
 
 @font-face {
@@ -4829,7 +5449,7 @@ label.error {
     max-width: 420px;
   }
 }
-.discount-wrap .info-wrap form button {
+.discount-wrap .info-wrap form .black-btn {
   height: 54px;
   border-radius: 14px;
   width: 100%;
@@ -4838,12 +5458,12 @@ label.error {
   font-size: 18px;
 }
 @media (max-width: 767px) {
-  .discount-wrap .info-wrap form button {
+  .discount-wrap .info-wrap form .black-btn {
     font-size: 16px;
     height: 48px;
   }
 }
-.discount-wrap .info-wrap form button:hover {
+.discount-wrap .info-wrap form .black-btn:hover {
   border-color: white;
 }
 .discount-wrap .info-wrap form input {

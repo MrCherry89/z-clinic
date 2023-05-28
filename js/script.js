@@ -260,4 +260,17 @@ $(document).ready(function () {
   $(".phone-number-input").inputmask({
     mask: "+7 (999) 999 - 99 - 99",
   });
+
+  $.fn.BeerSlider = function (options) {
+    options = options || {};
+    return this.each(function () {
+      new BeerSlider(this, options);
+    });
+  };
+
+  $(".beer-slider").each(function (index, el) {
+    $(el).BeerSlider({
+      start: $(el).data("start"),
+    });
+  });
 });

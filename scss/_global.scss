@@ -151,7 +151,24 @@ button {
   }
 }
 
-.black-btn {
+.green-btn {
+  @include inline-flex;
+  @include align-center;
+  @include justify-center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: #0cb553;
+  padding: 15px 30px;
+  border-radius: 14px;
+  border: 2px solid #0cb553;
+  &:hover {
+    background: white;
+    color: #0cb553;
+  }
+}
+
+.black2-btn {
   @include inline-flex;
   @include align-center;
   @include justify-center;
@@ -878,6 +895,493 @@ label.error {
       font-weight: 500;
       font-size: 14px;
       color: #828286;
+    }
+  }
+}
+
+.prices-wrapper {
+  margin: 100px auto 80px;
+  @media (max-width: 767px) {
+    margin: 40px auto;
+  }
+}
+
+.portfolio-wrap {
+  margin-top: 50px;
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
+  .wrapper {
+    @include flex;
+    @include justify-between;
+    .portfolio-info {
+      max-width: 924px;
+      width: 100%;
+      margin-right: 30px;
+      @media (max-width: 1024px) {
+        max-width: 100%;
+        margin-right: 0;
+      }
+      h1 {
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 105%;
+        margin-bottom: 36px;
+        @media (max-width: 1024px) {
+          font-size: 48px;
+          margin-bottom: 32px;
+        }
+        @media (max-width: 767px) {
+          font-size: 36px;
+          margin-bottom: 16px;
+        }
+      }
+      > p {
+        font-size: 22px;
+        line-height: 150%;
+        margin-bottom: 60px;
+        @media (max-width: 1024px) {
+          font-size: 20px;
+          line-height: 140%;
+          margin-bottom: 40px;
+        }
+        @media (max-width: 767px) {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 32px;
+        }
+      }
+      .tab-menu {
+        margin-bottom: 32px;
+        @include flex-wrap;
+        li {
+          margin-bottom: 8px;
+        }
+      }
+      .tab-content {
+        .tab-content-item {
+          .cost-item {
+            margin-bottom: 30px;
+            @media (max-width: 767px) {
+              margin-bottom: 20px;
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.clinic-prices-wrap {
+  margin-top: 50px;
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
+  .wrapper {
+    @include flex;
+    @include justify-between;
+    .clinic-prices-info {
+      max-width: 950px;
+      width: 100%;
+      margin-right: 30px;
+      @media (max-width: 1024px) {
+        max-width: 100%;
+        margin-right: 0;
+      }
+      h1 {
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 105%;
+        margin-bottom: 32px;
+        @media (max-width: 1024px) {
+          font-size: 48px;
+        }
+        @media (max-width: 767px) {
+          font-size: 34px;
+          margin-bottom: 16px;
+        }
+      }
+      > p {
+        font-size: 22px;
+        line-height: 150%;
+        margin-bottom: 32px;
+        .green-text {
+          color: #0cb553;
+        }
+        @media (max-width: 1200px) {
+          font-size: 20px;
+          line-height: 140%;
+        }
+        @media (max-width: 767px) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .clinic-prices-list {
+        li {
+          @include flex;
+          @include align-center;
+          margin-bottom: 22px;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 120%;
+          @media (max-width: 1200px) {
+            font-size: 24px;
+          }
+          @media (max-width: 1200px) {
+            font-size: 18px;
+            margin-bottom: 16px;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+      .links {
+        margin: 60px 0 40px;
+        @include flex;
+        @include flex-wrap;
+        @media (max-width: 1200px) {
+          margin: 40px 0;
+        }
+        a {
+          padding: 10px 16px;
+          font-size: 20px;
+          line-height: 130%;
+          background: #f4f5f6;
+          border-radius: 56px;
+          margin-right: 8px;
+          margin-bottom: 16px;
+          @media (max-width: 1200px) {
+            font-size: 18px;
+            margin-bottom: 8px;
+          }
+          @media (max-width: 767px) {
+            font-size: 12px;
+            padding: 6px 10px;
+          }
+          &:hover {
+            background: $black;
+            color: white;
+          }
+        }
+      }
+      .clinic-prices-info-item {
+        margin-bottom: 48px;
+        @media (max-width: 767px) {
+          margin-bottom: 24px;
+        }
+        .top {
+          @include flex;
+          @include align-center;
+          @include justify-between;
+          padding-bottom: 16px;
+          h3 {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 120%;
+            @media (max-width: 1200px) {
+              font-size: 34px;
+            }
+            @media (max-width: 767px) {
+              font-size: 24px;
+            }
+            &.purple-text {
+              color: $purple;
+            }
+          }
+          .special-price {
+            background: linear-gradient(
+              269.3deg,
+              #0cb553 3.11%,
+              #b76fff 101.81%
+            );
+            border-radius: 4px;
+            padding: 7px 8px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+          }
+        }
+        .item-wrap {
+          @include flex;
+          @include justify-between;
+          @include align-center;
+          padding: 16px 24px;
+          transition: 0.3s;
+          border: 1px solid rgba(31, 31, 41, 0.07);
+          border-left: 0;
+          border-right: 0;
+          margin-top: -1px;
+          @media (max-width: 767px) {
+            padding: 12px 0;
+          }
+          a {
+            font-size: 20px;
+            line-height: 120%;
+            position: relative;
+            margin-right: 10px;
+            @media (max-width: 1200px) {
+              font-size: 18px;
+            }
+            @media (max-width: 767px) {
+              font-size: 14px;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              transition: 0.3s;
+              width: 100%;
+              height: 1px;
+              border-bottom: 1px dashed rgba(31, 31, 41, 0.2);
+            }
+          }
+          .price {
+            font-size: 20px;
+            white-space: nowrap;
+            @media (max-width: 1200px) {
+              font-size: 18px;
+            }
+            @media (max-width: 767px) {
+              font-size: 14px;
+            }
+          }
+          .new-price {
+            margin-left: auto;
+            margin-right: 24px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 120%;
+            text-decoration: line-through;
+            color: #828286;
+            white-space: nowrap;
+            @media (max-width: 1200px) {
+              font-size: 18px;
+              margin-right: 16px;
+            }
+            @media (max-width: 767px) {
+              font-size: 14px;
+            }
+          }
+          .old-price {
+            @include flex;
+            @include align-center;
+            color: $purple;
+            font-size: 20px;
+            white-space: nowrap;
+            @media (max-width: 1200px) {
+              font-size: 18px;
+            }
+            @media (max-width: 767px) {
+              font-size: 14px;
+            }
+            img {
+              margin-right: 8px;
+              @media (max-width: 767px) {
+                width: 16px;
+              }
+            }
+          }
+          @media (min-width: 1025px) {
+            &:hover {
+              background: #f4f5f6;
+              border-color: #f4f5f6;
+              a {
+                color: #8000ff;
+                &:after {
+                  border-color: rgba(128, 0, 255, 0.2);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.beer-handle {
+  background: white;
+}
+
+.cost-item {
+  background: #f4f5f6;
+  border-radius: 30px;
+  @media (max-width: 767px) {
+    border-radius: 20px;
+  }
+
+  .beer-slider {
+    width: 100%;
+    border-radius: 30px;
+    height: 460px;
+    margin-bottom: 24px;
+    @media (max-width: 1024px) {
+      height: 400px;
+    }
+    @media (max-width: 767px) {
+      height: 250px;
+      margin-bottom: 0;
+      border-radius: 20px;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .text-wrap {
+    padding: 30px;
+    padding-top: 0;
+    @media (max-width: 767px) {
+      padding: 16px;
+    }
+    p {
+      font-size: 22px;
+      line-height: 150%;
+      margin-bottom: 32px;
+      @media (max-width: 767px) {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    .bottom {
+      @include flex;
+      @include flex-wrap;
+      @media (max-width: 767px) {
+        @include dir-col;
+      }
+      .purple-btn {
+        margin-left: auto;
+        opacity: 0;
+        @media (max-width: 767px) {
+          margin: 0;
+          margin-top: 16px;
+          opacity: 1;
+        }
+      }
+      .style-link {
+        @include flex;
+        padding: 6px 12px 8px 12px;
+        align-self: flex-start;
+        font-weight: 500;
+        font-size: 16px;
+        color: #8000ff;
+        margin-right: 16px;
+        background: #ead4ff;
+        border-radius: 1000px;
+        margin-bottom: 8px;
+        &:hover {
+          color: white;
+          background: #8000ff;
+        }
+      }
+      .time {
+        @include flex;
+        @include align-center;
+        align-self: flex-start;
+        background: #ffffff;
+        border-radius: 1000px;
+        padding: 4px 12px 4px 8px;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 8px;
+        img {
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+  &:hover {
+    .text-wrap {
+      .purple-btn {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.request-estimate {
+  background: #f4f5f6;
+  border-radius: 24px;
+  padding: 32px;
+  width: 330px;
+  min-width: 330px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 30px;
+  align-self: flex-start;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+  .style-img {
+    position: absolute;
+    top: 30px;
+    right: -20px;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 16px;
+    max-width: 230px;
+  }
+  > p {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+  }
+  form {
+    width: 100%;
+    input {
+      width: 100%;
+      height: 56px;
+      border-radius: 14px;
+      background: white;
+      margin-bottom: 16px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #828286;
+      padding: 0 20px;
+    }
+    button {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    p {
+      color: #828286;
+      font-size: 14px;
+      line-height: 120%;
+      a {
+        position: relative;
+        color: #828286;
+        font-size: 14px;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          transition: 0.3s;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          border-bottom: 1px dashed #828286;
+        }
+        &:hover {
+          &:after {
+            opacity: 0;
+          }
+        }
+      }
     }
   }
 }
