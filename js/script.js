@@ -209,6 +209,16 @@ $(document).ready(function () {
     ],
   });
 
+  $(".work-slider").slick({
+    dots: true,
+    infinite: true,
+    arrows: true,
+    speed: 700,
+    slidesToShow: 1,
+    prevArrow: $(".work-slider-wrap .slider-navigation .slick-prev"),
+    nextArrow: $(".work-slider-wrap .slider-navigation .slick-next"),
+  });
+
   $(".tab-menu li a").on("click", function (e) {
     e.preventDefault();
     $(this).closest(".tab-menu").find("li").removeClass("active");

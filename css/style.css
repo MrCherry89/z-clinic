@@ -1217,15 +1217,18 @@ label.error {
   margin-bottom: 0;
 }
 
-.clinic-prices-wrap {
+.clinic-prices-wrap,
+.service-wrap {
   margin-top: 50px;
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap {
+  .clinic-prices-wrap,
+.service-wrap {
     margin-top: 30px;
   }
 }
-.clinic-prices-wrap .wrapper {
+.clinic-prices-wrap .wrapper,
+.service-wrap .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1233,55 +1236,85 @@ label.error {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info {
+.clinic-prices-wrap .wrapper .clinic-prices-info,
+.clinic-prices-wrap .wrapper .service-info,
+.service-wrap .wrapper .clinic-prices-info,
+.service-wrap .wrapper .service-info {
   max-width: 950px;
   width: 100%;
   margin-right: 30px;
 }
 @media (max-width: 1024px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info {
+  .clinic-prices-wrap .wrapper .clinic-prices-info,
+.clinic-prices-wrap .wrapper .service-info,
+.service-wrap .wrapper .clinic-prices-info,
+.service-wrap .wrapper .service-info {
     max-width: 100%;
     margin-right: 0;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info h1 {
+.clinic-prices-wrap .wrapper .clinic-prices-info h1,
+.clinic-prices-wrap .wrapper .service-info h1,
+.service-wrap .wrapper .clinic-prices-info h1,
+.service-wrap .wrapper .service-info h1 {
   font-weight: 500;
   font-size: 64px;
   line-height: 105%;
   margin-bottom: 32px;
 }
 @media (max-width: 1024px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info h1 {
+  .clinic-prices-wrap .wrapper .clinic-prices-info h1,
+.clinic-prices-wrap .wrapper .service-info h1,
+.service-wrap .wrapper .clinic-prices-info h1,
+.service-wrap .wrapper .service-info h1 {
     font-size: 48px;
   }
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info h1 {
+  .clinic-prices-wrap .wrapper .clinic-prices-info h1,
+.clinic-prices-wrap .wrapper .service-info h1,
+.service-wrap .wrapper .clinic-prices-info h1,
+.service-wrap .wrapper .service-info h1 {
     font-size: 34px;
     margin-bottom: 16px;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info > p {
+.clinic-prices-wrap .wrapper .clinic-prices-info > p,
+.clinic-prices-wrap .wrapper .service-info > p,
+.service-wrap .wrapper .clinic-prices-info > p,
+.service-wrap .wrapper .service-info > p {
   font-size: 22px;
   line-height: 150%;
   margin-bottom: 32px;
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info > p .green-text {
+.clinic-prices-wrap .wrapper .clinic-prices-info > p .green-text,
+.clinic-prices-wrap .wrapper .service-info > p .green-text,
+.service-wrap .wrapper .clinic-prices-info > p .green-text,
+.service-wrap .wrapper .service-info > p .green-text {
   color: #0cb553;
 }
 @media (max-width: 1200px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info > p {
+  .clinic-prices-wrap .wrapper .clinic-prices-info > p,
+.clinic-prices-wrap .wrapper .service-info > p,
+.service-wrap .wrapper .clinic-prices-info > p,
+.service-wrap .wrapper .service-info > p {
     font-size: 20px;
     line-height: 140%;
   }
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info > p {
+  .clinic-prices-wrap .wrapper .clinic-prices-info > p,
+.clinic-prices-wrap .wrapper .service-info > p,
+.service-wrap .wrapper .clinic-prices-info > p,
+.service-wrap .wrapper .service-info > p {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-list li,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-list li,
+.service-wrap .wrapper .service-info .clinic-prices-list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1294,23 +1327,38 @@ label.error {
   line-height: 120%;
 }
 @media (max-width: 1200px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-list li,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-list li,
+.service-wrap .wrapper .service-info .clinic-prices-list li {
     font-size: 24px;
   }
 }
 @media (max-width: 1200px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-list li,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-list li,
+.service-wrap .wrapper .service-info .clinic-prices-list li {
     font-size: 18px;
     margin-bottom: 16px;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li:last-child {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li:last-child,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-list li:last-child,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-list li:last-child,
+.service-wrap .wrapper .service-info .clinic-prices-list li:last-child {
   margin-bottom: 0;
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li img {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-list li img,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-list li img,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-list li img,
+.service-wrap .wrapper .service-info .clinic-prices-list li img {
   margin-right: 10px;
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .links {
+.clinic-prices-wrap .wrapper .clinic-prices-info .links,
+.clinic-prices-wrap .wrapper .service-info .links,
+.service-wrap .wrapper .clinic-prices-info .links,
+.service-wrap .wrapper .service-info .links {
   margin: 60px 0 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1320,11 +1368,17 @@ label.error {
   flex-wrap: wrap;
 }
 @media (max-width: 1200px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .links {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .links,
+.clinic-prices-wrap .wrapper .service-info .links,
+.service-wrap .wrapper .clinic-prices-info .links,
+.service-wrap .wrapper .service-info .links {
     margin: 40px 0;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .links a {
+.clinic-prices-wrap .wrapper .clinic-prices-info .links a,
+.clinic-prices-wrap .wrapper .service-info .links a,
+.service-wrap .wrapper .clinic-prices-info .links a,
+.service-wrap .wrapper .service-info .links a {
   padding: 10px 16px;
   font-size: 20px;
   line-height: 130%;
@@ -1334,30 +1388,55 @@ label.error {
   margin-bottom: 16px;
 }
 @media (max-width: 1200px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .links a {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .links a,
+.clinic-prices-wrap .wrapper .service-info .links a,
+.service-wrap .wrapper .clinic-prices-info .links a,
+.service-wrap .wrapper .service-info .links a {
     font-size: 18px;
     margin-bottom: 8px;
   }
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .links a {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .links a,
+.clinic-prices-wrap .wrapper .service-info .links a,
+.service-wrap .wrapper .clinic-prices-info .links a,
+.service-wrap .wrapper .service-info .links a {
     font-size: 12px;
     padding: 6px 10px;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .links a:hover {
+.clinic-prices-wrap .wrapper .clinic-prices-info .links a:hover,
+.clinic-prices-wrap .wrapper .service-info .links a:hover,
+.service-wrap .wrapper .clinic-prices-info .links a:hover,
+.service-wrap .wrapper .service-info .links a:hover {
   background: #1f1f29;
   color: white;
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item {
+.clinic-prices-wrap .wrapper .clinic-prices-info .links a.active,
+.clinic-prices-wrap .wrapper .service-info .links a.active,
+.service-wrap .wrapper .clinic-prices-info .links a.active,
+.service-wrap .wrapper .service-info .links a.active {
+  background: rgba(128, 0, 255, 0.1);
+  color: #8000ff;
+}
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item,
+.service-wrap .wrapper .service-info .clinic-prices-info-item {
   margin-bottom: 48px;
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item,
+.service-wrap .wrapper .service-info .clinic-prices-info-item {
     margin-bottom: 24px;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .top,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1369,25 +1448,40 @@ label.error {
   justify-content: space-between;
   padding-bottom: 16px;
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3 {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .top h3,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .top h3 {
   font-weight: 500;
   font-size: 40px;
   line-height: 120%;
 }
 @media (max-width: 1200px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3 {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .top h3,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .top h3 {
     font-size: 34px;
   }
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3 {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .top h3,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .top h3 {
     font-size: 24px;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3.purple-text {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3.purple-text,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .top h3.purple-text,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top h3.purple-text,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .top h3.purple-text {
   color: #823af8;
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top .special-price {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top .special-price,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .top .special-price,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .top .special-price,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .top .special-price {
   background: linear-gradient(269.3deg, #0cb553 3.11%, #b76fff 101.81%);
   border-radius: 4px;
   padding: 7px 8px;
@@ -1396,7 +1490,10 @@ label.error {
   text-transform: uppercase;
   color: white;
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1414,27 +1511,42 @@ label.error {
   margin-top: -1px;
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap {
     padding: 12px 0;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap a,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap a {
   font-size: 20px;
   line-height: 120%;
   position: relative;
   margin-right: 10px;
 }
 @media (max-width: 1200px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap a,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap a {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap a,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap a {
     font-size: 14px;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a:after {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a:after,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap a:after,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a:after,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap a:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1444,21 +1556,33 @@ label.error {
   height: 1px;
   border-bottom: 1px dashed rgba(31, 31, 41, 0.2);
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .price,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .price {
   font-size: 20px;
   white-space: nowrap;
 }
 @media (max-width: 1200px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .price,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .price {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .price,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .price,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .price {
     font-size: 14px;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .new-price,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .new-price {
   margin-left: auto;
   margin-right: 24px;
   font-weight: 500;
@@ -1469,17 +1593,26 @@ label.error {
   white-space: nowrap;
 }
 @media (max-width: 1200px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .new-price,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .new-price {
     font-size: 18px;
     margin-right: 16px;
   }
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .new-price,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .new-price,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .new-price {
     font-size: 14px;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .old-price,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .old-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1491,34 +1624,1643 @@ label.error {
   white-space: nowrap;
 }
 @media (max-width: 1200px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .old-price,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .old-price {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .old-price,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .old-price {
     font-size: 14px;
   }
 }
-.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price img {
+.clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price img,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .old-price img,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price img,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .old-price img {
   margin-right: 8px;
 }
 @media (max-width: 767px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price img {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price img,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .old-price img,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap .old-price img,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap .old-price img {
     width: 16px;
   }
 }
 @media (min-width: 1025px) {
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap:hover,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap:hover {
     background: #f4f5f6;
     border-color: #f4f5f6;
   }
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover a {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover a,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap:hover a,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover a,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap:hover a {
     color: #8000ff;
   }
-  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover a:after {
+  .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover a:after,
+.clinic-prices-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap:hover a:after,
+.service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap:hover a:after,
+.service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap:hover a:after {
     border-color: rgba(128, 0, 255, 0.2);
   }
+}
+.clinic-prices-wrap .wrapper .service-info,
+.service-wrap .wrapper .service-info {
+  max-width: 1050px;
+}
+.clinic-prices-wrap .wrapper .service-info h1,
+.service-wrap .wrapper .service-info h1 {
+  max-width: 100%;
+  font-size: 48px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .service-info h1,
+.service-wrap .wrapper .service-info h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info h1,
+.service-wrap .wrapper .service-info h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .appointment,
+.service-wrap .wrapper .service-info .appointment {
+  margin-bottom: 80px;
+  padding: 40px;
+  background: linear-gradient(0deg, #f4f5f6, #f4f5f6);
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .service-info .appointment,
+.service-wrap .wrapper .service-info .appointment {
+    padding: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .appointment,
+.service-wrap .wrapper .service-info .appointment {
+    padding: 24px 16px;
+    border-radius: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .appointment .info-wrap,
+.service-wrap .wrapper .service-info .appointment .info-wrap {
+  width: 50%;
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .appointment .info-wrap,
+.service-wrap .wrapper .service-info .appointment .info-wrap {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .appointment .info-wrap p,
+.service-wrap .wrapper .service-info .appointment .info-wrap p {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .appointment .info-wrap p,
+.service-wrap .wrapper .service-info .appointment .info-wrap p {
+    font-size: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .appointment .info-wrap .price,
+.service-wrap .wrapper .service-info .appointment .info-wrap .price {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .service-info .appointment .info-wrap .price,
+.service-wrap .wrapper .service-info .appointment .info-wrap .price {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .appointment .info-wrap .price,
+.service-wrap .wrapper .service-info .appointment .info-wrap .price {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .appointment .info-wrap .cards,
+.service-wrap .wrapper .service-info .appointment .info-wrap .cards {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .service-info .appointment .info-wrap .cards,
+.service-wrap .wrapper .service-info .appointment .info-wrap .cards {
+    margin-bottom: 10px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .appointment .info-wrap .cards img,
+.service-wrap .wrapper .service-info .appointment .info-wrap .cards img {
+  margin-right: 10px;
+}
+.clinic-prices-wrap .wrapper .service-info .appointment .info-wrap .text,
+.service-wrap .wrapper .service-info .appointment .info-wrap .text {
+  max-width: 320px;
+  color: #828286;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .service-info .appointment .info-wrap .text,
+.service-wrap .wrapper .service-info .appointment .info-wrap .text {
+    margin-bottom: 20px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .appointment .info-wrap .purple2-btn,
+.service-wrap .wrapper .service-info .appointment .info-wrap .purple2-btn {
+  max-width: 250px;
+  width: 100%;
+  padding: 15px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .appointment .info-wrap .purple2-btn,
+.service-wrap .wrapper .service-info .appointment .info-wrap .purple2-btn {
+    max-width: 450px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .appointment .img-wrap,
+.service-wrap .wrapper .service-info .appointment .img-wrap {
+  width: 50%;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .appointment .img-wrap,
+.service-wrap .wrapper .service-info .appointment .img-wrap {
+    width: 100%;
+    margin-top: 24px;
+    border-radius: 10px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .appointment .img-wrap img,
+.service-wrap .wrapper .service-info .appointment .img-wrap img {
+  width: 100%;
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation,
+.service-wrap .wrapper .service-info .what-implantation {
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .what-implantation,
+.service-wrap .wrapper .service-info .what-implantation {
+    margin-bottom: 30px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation h2,
+.service-wrap .wrapper .service-info .what-implantation h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .service-info .what-implantation h2,
+.service-wrap .wrapper .service-info .what-implantation h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .what-implantation h2,
+.service-wrap .wrapper .service-info .what-implantation h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .images,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .images {
+  width: calc((100% - 30px) / 2);
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .images,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .images {
+    width: 100%;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .images .img-wrap,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .images .img-wrap {
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .images .img-wrap:last-child,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .images .img-wrap:last-child {
+  margin-bottom: 0;
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .images .img-wrap img,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .images .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .images .img-wrap.hide,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .images .img-wrap.hide {
+    display: none;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .texts {
+  width: calc((100% - 30px) / 2);
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .texts {
+    width: 100%;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts p,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .texts p {
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts p,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .texts p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul {
+  margin-bottom: 24px;
+  list-style-type: disc;
+  padding-left: 15px;
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul:last-child,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul:last-child {
+  margin-bottom: 0;
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul li,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul li {
+  font-size: 20px;
+  line-height: 150%;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul li,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .service-info-block,
+.service-wrap .wrapper .service-info .service-info-block {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient(269.3deg, rgba(12, 181, 83, 0.1) 3.11%, rgba(183, 111, 255, 0.1) 101.81%);
+  box-shadow: inset 2px 0px 0px #8000ff;
+  border-radius: 24px;
+  padding: 32px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .service-info-block,
+.service-wrap .wrapper .service-info .service-info-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .service-info-block img,
+.service-wrap .wrapper .service-info .service-info-block img {
+  margin-right: 25px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .service-info-block img,
+.service-wrap .wrapper .service-info .service-info-block img {
+    margin: 0 auto 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-info .service-info-block p,
+.service-wrap .wrapper .service-info .service-info-block p {
+  font-size: 22px;
+  line-height: 140%;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-info .service-info-block p,
+.service-wrap .wrapper .service-info .service-info-block p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+.clinic-prices-wrap .wrapper .content-wrap,
+.service-wrap .wrapper .content-wrap {
+  width: 330px;
+  min-width: 330px;
+  margin-top: 180px;
+  position: sticky;
+  margin-bottom: 80px;
+  position: -webkit-sticky;
+  top: 30px;
+  align-self: flex-start;
+  padding-top: 16px;
+  border-top: 1px solid rgba(31, 31, 41, 0.07);
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .content-wrap,
+.service-wrap .wrapper .content-wrap {
+    display: none;
+  }
+}
+.clinic-prices-wrap .wrapper .content-wrap .content,
+.service-wrap .wrapper .content-wrap .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 250px;
+}
+.clinic-prices-wrap .wrapper .content-wrap .content p,
+.service-wrap .wrapper .content-wrap .content p {
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+  color: #828286;
+}
+.clinic-prices-wrap .wrapper .content-wrap .content a,
+.service-wrap .wrapper .content-wrap .content a {
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 16px;
+  position: relative;
+  align-self: flex-start;
+}
+.clinic-prices-wrap .wrapper .content-wrap .content a:after,
+.service-wrap .wrapper .content-wrap .content a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transition: 0.3s;
+  border-bottom: 1px dashed rgba(31, 31, 41, 0.2);
+}
+.clinic-prices-wrap .wrapper .content-wrap .content a:hover,
+.service-wrap .wrapper .content-wrap .content a:hover {
+  color: #823af8;
+}
+.clinic-prices-wrap .wrapper .content-wrap .content a:hover:after,
+.service-wrap .wrapper .content-wrap .content a:hover:after {
+  border-color: #823af8;
+}
+.clinic-prices-wrap .wrapper .content-wrap .request-estimate .style-img,
+.service-wrap .wrapper .content-wrap .request-estimate .style-img {
+  top: -20px;
+}
+.clinic-prices-wrap .wrapper .service-prices,
+.service-wrap .wrapper .service-prices {
+  margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-prices,
+.service-wrap .wrapper .service-prices {
+    margin-bottom: 40px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-prices h2,
+.service-wrap .wrapper .service-prices h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .service-prices h2,
+.service-wrap .wrapper .service-prices h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-prices h2,
+.service-wrap .wrapper .service-prices h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-prices .service-prices-item,
+.service-wrap .wrapper .service-prices .service-prices-item {
+  border-bottom: 1px solid rgba(31, 31, 41, 0.07);
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-prices .service-prices-item,
+.service-wrap .wrapper .service-prices .service-prices-item {
+    padding: 16px 0;
+  }
+}
+.clinic-prices-wrap .wrapper .service-prices .service-prices-item.border,
+.service-wrap .wrapper .service-prices .service-prices-item.border {
+  border-top: 1px solid rgba(31, 31, 41, 0.07);
+}
+.clinic-prices-wrap .wrapper .service-prices .service-prices-item .texts p,
+.service-wrap .wrapper .service-prices .service-prices-item .texts p {
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-prices .service-prices-item .texts p,
+.service-wrap .wrapper .service-prices .service-prices-item .texts p {
+    font-size: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .service-prices .service-prices-item .texts .text,
+.service-wrap .wrapper .service-prices .service-prices-item .texts .text {
+  color: #828286;
+  max-width: 550px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.clinic-prices-wrap .wrapper .service-prices .service-prices-item .price,
+.service-wrap .wrapper .service-prices .service-prices-item .price {
+  font-size: 20px;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .service-prices .service-prices-item .price,
+.service-wrap .wrapper .service-prices .service-prices-item .price {
+    font-size: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .implants,
+.service-wrap .wrapper .implants {
+  margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implants,
+.service-wrap .wrapper .implants {
+    margin-bottom: 40px;
+  }
+}
+.clinic-prices-wrap .wrapper .implants h2,
+.service-wrap .wrapper .implants h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .implants h2,
+.service-wrap .wrapper .implants h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implants h2,
+.service-wrap .wrapper .implants h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .implants .info,
+.service-wrap .wrapper .implants .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.clinic-prices-wrap .wrapper .implants .info .text-wrap,
+.service-wrap .wrapper .implants .info .text-wrap {
+  width: 57%;
+  padding-right: 20px;
+}
+@media (max-width: 1300px) {
+  .clinic-prices-wrap .wrapper .implants .info .text-wrap,
+.service-wrap .wrapper .implants .info .text-wrap {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.clinic-prices-wrap .wrapper .implants .info .text-wrap p,
+.service-wrap .wrapper .implants .info .text-wrap p {
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implants .info .text-wrap p,
+.service-wrap .wrapper .implants .info .text-wrap p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .implants .info .text-wrap p b,
+.service-wrap .wrapper .implants .info .text-wrap p b {
+  font-weight: 600;
+}
+.clinic-prices-wrap .wrapper .implants .info .text-wrap ul,
+.service-wrap .wrapper .implants .info .text-wrap ul {
+  margin-bottom: 24px;
+  counter-reset: number;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implants .info .text-wrap ul,
+.service-wrap .wrapper .implants .info .text-wrap ul {
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .implants .info .text-wrap ul li,
+.service-wrap .wrapper .implants .info .text-wrap ul li {
+  font-size: 20px;
+  line-height: 150%;
+  counter-increment: number;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implants .info .text-wrap ul li,
+.service-wrap .wrapper .implants .info .text-wrap ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .implants .info .text-wrap ul li:before,
+.service-wrap .wrapper .implants .info .text-wrap ul li:before {
+  content: " " counter(number) ". ";
+}
+.clinic-prices-wrap .wrapper .implants .info .img-wrap,
+.service-wrap .wrapper .implants .info .img-wrap {
+  width: 43%;
+  background: rgba(244, 245, 246, 0.5);
+  border-radius: 24px;
+  padding: 32px;
+  align-self: flex-start;
+}
+@media (max-width: 1300px) {
+  .clinic-prices-wrap .wrapper .implants .info .img-wrap,
+.service-wrap .wrapper .implants .info .img-wrap {
+    width: 100%;
+  }
+}
+.clinic-prices-wrap .wrapper .implants .info .img-wrap img,
+.service-wrap .wrapper .implants .info .img-wrap img {
+  width: 100%;
+}
+.clinic-prices-wrap .wrapper .implantation-process,
+.service-wrap .wrapper .implantation-process {
+  margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implantation-process,
+.service-wrap .wrapper .implantation-process {
+    margin-bottom: 40px;
+  }
+}
+.clinic-prices-wrap .wrapper .implantation-process h2,
+.service-wrap .wrapper .implantation-process h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 52px;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .implantation-process h2,
+.service-wrap .wrapper .implantation-process h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implantation-process h2,
+.service-wrap .wrapper .implantation-process h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .implantation-process ul,
+.service-wrap .wrapper .implantation-process ul {
+  margin-bottom: 24px;
+  counter-reset: number2;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implantation-process ul,
+.service-wrap .wrapper .implantation-process ul {
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .implantation-process ul li,
+.service-wrap .wrapper .implantation-process ul li {
+  font-size: 20px;
+  line-height: 150%;
+  counter-increment: number2;
+  padding-left: 90px;
+  position: relative;
+  margin-bottom: 32px;
+  max-width: 720px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implantation-process ul li,
+.service-wrap .wrapper .implantation-process ul li {
+    padding-left: 0;
+  }
+}
+.clinic-prices-wrap .wrapper .implantation-process ul li p,
+.service-wrap .wrapper .implantation-process ul li p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implantation-process ul li p,
+.service-wrap .wrapper .implantation-process ul li p {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
+.clinic-prices-wrap .wrapper .implantation-process ul li span,
+.service-wrap .wrapper .implantation-process ul li span {
+  font-size: 20px;
+  line-height: 150%;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implantation-process ul li span,
+.service-wrap .wrapper .implantation-process ul li span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .implantation-process ul li:before,
+.service-wrap .wrapper .implantation-process ul li:before {
+  content: " " counter(number2) " ";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(128, 0, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implantation-process ul li:before,
+.service-wrap .wrapper .implantation-process ul li:before {
+    position: static;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implantation-process ul li,
+.service-wrap .wrapper .implantation-process ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .comparison-methods,
+.service-wrap .wrapper .comparison-methods {
+  margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .comparison-methods,
+.service-wrap .wrapper .comparison-methods {
+    margin-bottom: 40px;
+  }
+}
+.clinic-prices-wrap .wrapper .comparison-methods h2,
+.service-wrap .wrapper .comparison-methods h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .comparison-methods h2,
+.service-wrap .wrapper .comparison-methods h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap,
+.service-wrap .wrapper .comparison-methods .table-wrap {
+  overflow: hidden;
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table,
+.service-wrap .wrapper .comparison-methods .table-wrap .table {
+  overflow-x: auto;
+  min-width: 100%;
+  border: 1px solid rgba(31, 31, 41, 0.07);
+  border-radius: 24px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table,
+.service-wrap .wrapper .comparison-methods .table-wrap .table {
+    border-radius: 20px;
+  }
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar,
+.service-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar {
+    width: 0;
+  }
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar-track,
+.service-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar-track {
+    background: transparent;
+    width: 0;
+  }
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar-thumb,
+.service-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar-thumb {
+    background: transparent;
+    width: 0;
+  }
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-head,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px;
+  background: #f4f5f6;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-head,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-head {
+    padding: 16px;
+    background: none;
+  }
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-head p,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-head p {
+  width: 25%;
+  font-weight: 500;
+  font-size: 20px;
+}
+@media (max-width: 1300px) {
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-head p,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-head p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-head p,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-head p {
+    min-width: 200px;
+  }
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul {
+  width: 100%;
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li {
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(31, 31, 41, 0.07);
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li {
+    padding: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li:last-child,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li:last-child {
+  border-bottom: none;
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .grey,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .grey {
+  width: 25%;
+  font-size: 20px;
+  line-height: 150%;
+  color: #828286;
+  padding-right: 10px;
+}
+@media (max-width: 1300px) {
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .grey,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .grey {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .grey,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .grey {
+    min-width: 200px;
+  }
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .text,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .text {
+  width: 25%;
+  font-size: 20px;
+  line-height: 150%;
+  padding-right: 10px;
+}
+@media (max-width: 1300px) {
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .text,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .text {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .text,
+.service-wrap .wrapper .comparison-methods .table-wrap .table .table-body ul li .text {
+    min-width: 200px;
+  }
+}
+.clinic-prices-wrap .wrapper .methods-implantation,
+.service-wrap .wrapper .methods-implantation {
+  margin-bottom: 80px;
+  max-width: 924px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .methods-implantation,
+.service-wrap .wrapper .methods-implantation {
+    margin-bottom: 40px;
+  }
+}
+.clinic-prices-wrap .wrapper .methods-implantation h2,
+.service-wrap .wrapper .methods-implantation h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .methods-implantation h2,
+.service-wrap .wrapper .methods-implantation h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .methods-implantation h2,
+.service-wrap .wrapper .methods-implantation h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .methods-implantation h5,
+.service-wrap .wrapper .methods-implantation h5 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .methods-implantation h5,
+.service-wrap .wrapper .methods-implantation h5 {
+    font-size: 18px;
+  }
+}
+.clinic-prices-wrap .wrapper .methods-implantation .links,
+.service-wrap .wrapper .methods-implantation .links {
+  margin: 0;
+  max-width: 924px;
+  margin-bottom: 24px;
+}
+.clinic-prices-wrap .wrapper .methods-implantation > p,
+.service-wrap .wrapper .methods-implantation > p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 150%;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .methods-implantation > p,
+.service-wrap .wrapper .methods-implantation > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .methods-implantation h3,
+.service-wrap .wrapper .methods-implantation h3 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .methods-implantation h3,
+.service-wrap .wrapper .methods-implantation h3 {
+    font-size: 18px;
+  }
+}
+.clinic-prices-wrap .wrapper .methods-implantation .more,
+.service-wrap .wrapper .methods-implantation .more {
+  font-size: 20px;
+  color: #8000ff;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .methods-implantation .more,
+.service-wrap .wrapper .methods-implantation .more {
+    font-size: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .methods-implantation .more:after,
+.service-wrap .wrapper .methods-implantation .more:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.3s;
+  height: 1px;
+  border-bottom: 1px dashed rgba(128, 0, 255, 0.2);
+}
+.clinic-prices-wrap .wrapper .methods-implantation .more:hover:after,
+.service-wrap .wrapper .methods-implantation .more:hover:after {
+  border-color: #8000ff;
+}
+.clinic-prices-wrap .wrapper .types-implants,
+.service-wrap .wrapper .types-implants {
+  margin-bottom: 80px;
+  max-width: 924px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-implants,
+.service-wrap .wrapper .types-implants {
+    margin-bottom: 40px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-implants h2,
+.service-wrap .wrapper .types-implants h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .types-implants h2,
+.service-wrap .wrapper .types-implants h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-implants h2,
+.service-wrap .wrapper .types-implants h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-implants .texts,
+.service-wrap .wrapper .types-implants .texts {
+  margin-bottom: 24px;
+}
+.clinic-prices-wrap .wrapper .types-implants .texts h4,
+.service-wrap .wrapper .types-implants .texts h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-implants .texts h4,
+.service-wrap .wrapper .types-implants .texts h4 {
+    font-size: 18px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-implants .texts p,
+.service-wrap .wrapper .types-implants .texts p {
+  font-size: 20px;
+  line-height: 150%;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-implants .texts p,
+.service-wrap .wrapper .types-implants .texts p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-implants .info,
+.service-wrap .wrapper .types-implants .info {
+  margin-bottom: 40px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-implants .info,
+.service-wrap .wrapper .types-implants .info {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-implants .info ul li,
+.service-wrap .wrapper .types-implants .info ul li {
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 20px;
+  padding-left: 32px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .types-implants .info ul li,
+.service-wrap .wrapper .types-implants .info ul li {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-implants .info ul li,
+.service-wrap .wrapper .types-implants .info ul li {
+    padding-left: 26px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-implants .info ul li:after,
+.service-wrap .wrapper .types-implants .info ul li:after {
+  content: "";
+  top: 6px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .types-implants .info ul li:after,
+.service-wrap .wrapper .types-implants .info ul li:after {
+    top: 3px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-implants .info ul li:after,
+.service-wrap .wrapper .types-implants .info ul li:after {
+    width: 16px;
+    height: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-implants .info ul li:last-child,
+.service-wrap .wrapper .types-implants .info ul li:last-child {
+  margin-bottom: 0;
+}
+.clinic-prices-wrap .wrapper .types-implants .info .left,
+.service-wrap .wrapper .types-implants .info .left {
+  background: rgba(39, 174, 96, 0.05);
+  border-radius: 24px;
+  padding: 32px;
+  padding-top: 24px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .types-implants .info .left,
+.service-wrap .wrapper .types-implants .info .left {
+    padding: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-implants .info .left,
+.service-wrap .wrapper .types-implants .info .left {
+    padding: 16px;
+    border-radius: 20px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-implants .info .left ul li:after,
+.service-wrap .wrapper .types-implants .info .left ul li:after {
+  background: url(../img/plus-green.png);
+}
+.clinic-prices-wrap .wrapper .types-implants .info .left p,
+.service-wrap .wrapper .types-implants .info .left p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  color: #27ae60;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-implants .info .left p,
+.service-wrap .wrapper .types-implants .info .left p {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-implants .info .right,
+.service-wrap .wrapper .types-implants .info .right {
+  border: 1px solid rgba(235, 87, 87, 0.2);
+  border-radius: 24px;
+  padding: 32px;
+  padding-top: 24px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .types-implants .info .right,
+.service-wrap .wrapper .types-implants .info .right {
+    padding: 24px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-implants .info .right ul li:after,
+.service-wrap .wrapper .types-implants .info .right ul li:after {
+  background: url(../img/minus-red.png);
+}
+.clinic-prices-wrap .wrapper .types-implants .info .right p,
+.service-wrap .wrapper .types-implants .info .right p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  color: #eb5757;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-implants .info .right p,
+.service-wrap .wrapper .types-implants .info .right p {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-prostheses,
+.service-wrap .wrapper .types-prostheses {
+  margin-bottom: 80px;
+  max-width: 924px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-prostheses,
+.service-wrap .wrapper .types-prostheses {
+    margin-bottom: 40px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-prostheses h2,
+.service-wrap .wrapper .types-prostheses h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .types-prostheses h2,
+.service-wrap .wrapper .types-prostheses h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-prostheses h2,
+.service-wrap .wrapper .types-prostheses h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-prostheses .prostheses-item,
+.service-wrap .wrapper .types-prostheses .prostheses-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-prostheses .prostheses-item,
+.service-wrap .wrapper .types-prostheses .prostheses-item {
+    flex-direction: column;
+  }
+}
+.clinic-prices-wrap .wrapper .types-prostheses .prostheses-item:last-child,
+.service-wrap .wrapper .types-prostheses .prostheses-item:last-child {
+  margin-bottom: 0;
+}
+.clinic-prices-wrap .wrapper .types-prostheses .prostheses-item .img-wrap,
+.service-wrap .wrapper .types-prostheses .prostheses-item .img-wrap {
+  min-width: 330px;
+  height: 210px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-right: 25px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .types-prostheses .prostheses-item .img-wrap,
+.service-wrap .wrapper .types-prostheses .prostheses-item .img-wrap {
+    min-width: 280px;
+    height: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .types-prostheses .prostheses-item .img-wrap,
+.service-wrap .wrapper .types-prostheses .prostheses-item .img-wrap {
+    height: auto;
+    min-width: 100%;
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+}
+.clinic-prices-wrap .wrapper .types-prostheses .prostheses-item .img-wrap img,
+.service-wrap .wrapper .types-prostheses .prostheses-item .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.clinic-prices-wrap .wrapper .types-prostheses .prostheses-item .texts,
+.service-wrap .wrapper .types-prostheses .prostheses-item .texts {
+  flex-grow: 1;
+}
+.clinic-prices-wrap .wrapper .types-prostheses .prostheses-item .texts h4,
+.service-wrap .wrapper .types-prostheses .prostheses-item .texts h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .types-prostheses .prostheses-item .texts h4,
+.service-wrap .wrapper .types-prostheses .prostheses-item .texts h4 {
+    font-size: 22px;
+  }
+}
+.clinic-prices-wrap .wrapper .types-prostheses .prostheses-item .texts p,
+.service-wrap .wrapper .types-prostheses .prostheses-item .texts p {
+  font-size: 20px;
+  line-height: 150%;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .types-prostheses .prostheses-item .texts p,
+.service-wrap .wrapper .types-prostheses .prostheses-item .texts p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.clinic-prices-wrap .wrapper .results-work,
+.service-wrap .wrapper .results-work {
+  margin-bottom: 80px;
+  max-width: 924px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .results-work,
+.service-wrap .wrapper .results-work {
+    margin-bottom: 40px;
+  }
+}
+.clinic-prices-wrap .wrapper .results-work h2,
+.service-wrap .wrapper .results-work h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .results-work h2,
+.service-wrap .wrapper .results-work h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .results-work h2,
+.service-wrap .wrapper .results-work h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap,
+.service-wrap .wrapper .results-work .work-slider-wrap {
+  position: relative;
+  padding-bottom: 65px;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slick-dots,
+.service-wrap .wrapper .results-work .work-slider-wrap .slick-dots {
+  bottom: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slick-dots,
+.service-wrap .wrapper .results-work .work-slider-wrap .slick-dots {
+    bottom: -45px;
+  }
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slick-dots li,
+.service-wrap .wrapper .results-work .work-slider-wrap .slick-dots li {
+  width: auto;
+  height: auto;
+  margin: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slick-dots li button,
+.service-wrap .wrapper .results-work .work-slider-wrap .slick-dots li button {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slick-dots li button:before,
+.service-wrap .wrapper .results-work .work-slider-wrap .slick-dots li button:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 50%;
+  transition: 0.3s;
+  background: rgba(130, 58, 248, 0.3);
+  opacity: 1;
+  line-height: inherit;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slick-dots li.slick-active button:before,
+.service-wrap .wrapper .results-work .work-slider-wrap .slick-dots li.slick-active button:before {
+  background: #823af8;
+  width: 14px;
+  height: 14px;
+  top: -2px;
+  left: -2px;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button,
+.service-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  bottom: 5px;
+  border: 2px solid #1f1f29;
+  transform: translate(0, 0);
+  top: inherit;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button.slick-next,
+.service-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button.slick-next {
+  right: 0;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button.slick-prev,
+.service-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button.slick-prev {
+  left: 0;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button:hover,
+.service-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button:hover {
+  background: #1f1f29;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button:hover svg path,
+.service-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button:hover svg path {
+  stroke: white;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button svg,
+.service-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button svg {
+  margin: auto;
+  transition: 0.3s;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button svg path,
+.service-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button svg path {
+  transition: 0.3s;
+  stroke: #1f1f29;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button:before,
+.service-wrap .wrapper .results-work .work-slider-wrap .slider-navigation button:before {
+  content: none;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .work-slider,
+.service-wrap .wrapper .results-work .work-slider-wrap .work-slider {
+  margin-bottom: 0;
+}
+.clinic-prices-wrap .wrapper .results-work .work-slider-wrap .work-slider .item .cost-item .purple-btn,
+.service-wrap .wrapper .results-work .work-slider-wrap .work-slider .item .cost-item .purple-btn {
+  opacity: 1;
+}
+.clinic-prices-wrap .wrapper .questions-answers,
+.service-wrap .wrapper .questions-answers {
+  margin-bottom: 80px;
+  max-width: 924px;
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .questions-answers,
+.service-wrap .wrapper .questions-answers {
+    margin-bottom: 40px;
+  }
+}
+.clinic-prices-wrap .wrapper .questions-answers h2,
+.service-wrap .wrapper .questions-answers h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .questions-answers h2,
+.service-wrap .wrapper .questions-answers h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .questions-answers h2,
+.service-wrap .wrapper .questions-answers h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .clinic-prices-wrap .wrapper .questions-answers .item-heading p,
+.service-wrap .wrapper .questions-answers .item-heading p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .questions-answers .item-heading p,
+.service-wrap .wrapper .questions-answers .item-heading p {
+    font-size: 16px;
+  }
+}
+
+.free-treatment {
+  margin-bottom: 80px;
+  background: #f4f5f6;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+@media (max-width: 1024px) {
+  .free-treatment {
+    display: none;
+  }
+}
+.free-treatment .text-wrap {
+  padding: 40px 0 40px 60px;
+}
+@media (max-width: 1300px) {
+  .free-treatment .text-wrap {
+    padding: 30px 0 30px 30px;
+  }
+}
+.free-treatment .img-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.free-treatment .img-wrap img {
+  width: 100%;
+}
+.free-treatment h2 {
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 105%;
+  max-width: 660px;
+  margin-bottom: 60px;
+}
+@media (max-width: 1300px) {
+  .free-treatment h2 {
+    font-size: 44px;
+    max-width: 500px;
+  }
+}
+.free-treatment h2 .green-text {
+  color: #0cb553;
+}
+.free-treatment .form input {
+  max-width: 340px;
+  width: 100%;
+  height: 54px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #828286;
+  padding: 0 20px;
+}
+.free-treatment .form .btn-wrap {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 1300px) {
+  .free-treatment .form .btn-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.free-treatment .form .btn-wrap button {
+  margin-right: 40px;
+  max-width: 340px;
+  height: 54px;
+  width: 100%;
+}
+@media (max-width: 1300px) {
+  .free-treatment .form .btn-wrap button {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1300px) {
+  .free-treatment .form .btn-wrap .texts {
+    margin-top: 20px;
+  }
+}
+.free-treatment .form .btn-wrap .texts p {
+  color: #828286;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.free-treatment .form .btn-wrap .texts a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1f1f29;
+}
+.free-treatment .form > p {
+  color: #828286;
+  font-size: 14px;
+  max-width: 250px;
+}
+.free-treatment .form > p a {
+  color: #828286;
 }
 
 .beer-handle {
@@ -2429,7 +4171,16 @@ label.error {
   background: rgba(128, 0, 255, 0.1);
   color: #8000ff;
 }
-.article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice {
+.article .wrapper .article-wrap .article-info .article-bottom-info .accordion-list {
+  margin-top: 60px;
+}
+@media (max-width: 767px) {
+  .article .wrapper .article-wrap .article-info .article-bottom-info .accordion-list {
+    margin-top: 40px;
+  }
+}
+
+.doctors-advice {
   margin-bottom: 60px;
   background: #f4f5f6;
   border-radius: 24px;
@@ -2438,7 +4189,7 @@ label.error {
   display: flex;
 }
 @media (max-width: 767px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice {
+  .doctors-advice {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2446,22 +4197,22 @@ label.error {
     margin-bottom: 24px;
   }
 }
-.article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap {
+.doctors-advice .text-wrap {
   padding: 40px;
   width: 60%;
 }
 @media (max-width: 1300px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap {
+  .doctors-advice .text-wrap {
     padding: 30px;
   }
 }
 @media (max-width: 767px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap {
+  .doctors-advice .text-wrap {
     padding: 24px 16px 0;
     width: 100%;
   }
 }
-.article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap .bold-text {
+.doctors-advice .text-wrap .bold-text {
   font-style: italic;
   font-weight: 500;
   font-size: 22px;
@@ -2470,17 +4221,17 @@ label.error {
   display: block;
 }
 @media (max-width: 1300px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap .bold-text {
+  .doctors-advice .text-wrap .bold-text {
     font-size: 20px;
     line-height: 140%;
   }
 }
 @media (max-width: 767px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap .bold-text {
+  .doctors-advice .text-wrap .bold-text {
     font-size: 16px;
   }
 }
-.article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap .text {
+.doctors-advice .text-wrap .text {
   font-style: italic;
   font-weight: 400;
   font-size: 22px;
@@ -2489,18 +4240,18 @@ label.error {
   display: block;
 }
 @media (max-width: 1300px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap .text {
+  .doctors-advice .text-wrap .text {
     font-size: 20px;
     line-height: 140%;
   }
 }
 @media (max-width: 767px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap .text {
+  .doctors-advice .text-wrap .text {
     font-size: 16px;
     line-height: 22px;
   }
 }
-.article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap .name {
+.doctors-advice .text-wrap .name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2510,41 +4261,83 @@ label.error {
   margin-bottom: 8px;
 }
 @media (max-width: 1300px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap .name {
+  .doctors-advice .text-wrap .name {
     font-size: 20px;
   }
 }
-.article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap .name img {
+.doctors-advice .text-wrap .name img {
   margin-left: 8px;
 }
 @media (max-width: 1300px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap .name img {
+  .doctors-advice .text-wrap .name img {
     margin-top: -2px;
   }
 }
-.article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .text-wrap b {
+.doctors-advice .text-wrap b {
   color: #828286;
   font-weight: 500;
 }
-.article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .img-wrap {
+.doctors-advice .img-wrap {
   width: 40%;
   align-self: flex-end;
 }
 @media (max-width: 767px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .img-wrap {
+  .doctors-advice .img-wrap {
     width: 100%;
     align-self: center;
   }
 }
-.article .wrapper .article-wrap .article-info .article-bottom-info .doctors-advice .img-wrap img {
+.doctors-advice .img-wrap img {
   width: 100%;
 }
-.article .wrapper .article-wrap .article-info .article-bottom-info .accordion-list {
-  margin-top: 60px;
+.doctors-advice.doctors-advice2 {
+  padding: 40px 30px 0 40px;
+  margin-bottom: 80px;
+}
+@media (max-width: 1200px) {
+  .doctors-advice.doctors-advice2 {
+    padding: 30px;
+    padding-bottom: 0;
+  }
 }
 @media (max-width: 767px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .accordion-list {
-    margin-top: 40px;
+  .doctors-advice.doctors-advice2 {
+    margin-bottom: 40px;
+    padding: 30px 20px 0;
+  }
+}
+.doctors-advice.doctors-advice2 .text-wrap {
+  padding: 0;
+  padding-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .doctors-advice.doctors-advice2 .text-wrap .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .doctors-advice.doctors-advice2 .text-wrap .text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+}
+.doctors-advice.doctors-advice2 h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .doctors-advice.doctors-advice2 h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .doctors-advice.doctors-advice2 h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
   }
 }
 
@@ -2978,6 +4771,11 @@ label.error {
 @media (max-width: 1024px) {
   .blog-item .text-wrap a {
     font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-item .text-wrap a {
+    font-size: 18px;
   }
 }
 .blog-item .text-wrap a:hover {
