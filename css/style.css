@@ -857,6 +857,9 @@ label.error {
   .pagination-wrap > button.left {
     display: inline-block;
   }
+  .pagination-wrap > button.left img {
+    transform: rotate(180deg);
+  }
 }
 .pagination-wrap > button.right {
   margin-left: 20px;
@@ -892,6 +895,7 @@ label.error {
   font-size: 18px;
   font-weight: 500;
   transition: 0.3s;
+  background: #f4f5f6;
   border-radius: 8px;
 }
 @media (max-width: 767px) {
@@ -1541,6 +1545,7 @@ label.error {
 .service-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a,
 .service-wrap .wrapper .service-info .clinic-prices-info-item .item-wrap a {
     font-size: 14px;
+    max-width: 140px;
   }
 }
 .clinic-prices-wrap .wrapper .clinic-prices-info .clinic-prices-info-item .item-wrap a:after,
@@ -2308,6 +2313,24 @@ label.error {
 .service-wrap .wrapper .implantation-process ul {
   margin-bottom: 24px;
   counter-reset: number2;
+  position: relative;
+}
+.clinic-prices-wrap .wrapper .implantation-process ul:after,
+.service-wrap .wrapper .implantation-process ul:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  width: 2px;
+  height: 90%;
+  z-index: -1;
+  background: rgba(128, 0, 255, 0.1);
+}
+@media (max-width: 767px) {
+  .clinic-prices-wrap .wrapper .implantation-process ul:after,
+.service-wrap .wrapper .implantation-process ul:after {
+    content: none;
+  }
 }
 @media (max-width: 767px) {
   .clinic-prices-wrap .wrapper .implantation-process ul,
@@ -3462,6 +3485,52 @@ label.error {
   opacity: 0;
 }
 
+#video-popup {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+#video-popup .popup-body {
+  border-radius: 30px;
+  width: 100%;
+  padding: 50px;
+}
+#video-popup .popup-body iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
 @font-face {
   font-family: "TT Hoves";
   src: url("../fonts/TTHoves-Light.woff2") format("woff2"), url("../fonts/TTHoves-Light.woff") format("woff"), url("../fonts/TTHoves-Light.ttf") format("truetype");
@@ -3510,6 +3579,7 @@ label.error {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 1440px;
 }
 .social-block .wrapper .social-item {
   margin-bottom: 28px;
@@ -4034,18 +4104,27 @@ label.error {
     margin-bottom: 16px;
   }
 }
+.article .wrapper .article-wrap .article-info .article-bottom-info .info-wrap {
+  background: linear-gradient(269.3deg, #0cb553 3.11%, #b76fff 101.81%);
+  border-radius: 24px;
+  padding: 1px;
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .article .wrapper .article-wrap .article-info .article-bottom-info .info-wrap {
+    margin-bottom: 40px;
+  }
+}
 .article .wrapper .article-wrap .article-info .article-bottom-info .info {
-  border: 1px solid #1f1f29;
   border-radius: 24px;
   padding: 40px;
   padding-top: 32px;
-  margin-bottom: 60px;
+  background: white;
   position: relative;
 }
 @media (max-width: 767px) {
   .article .wrapper .article-wrap .article-info .article-bottom-info .info {
     padding: 24px 16px;
-    margin-bottom: 40px;
   }
 }
 .article .wrapper .article-wrap .article-info .article-bottom-info .info h5 {
@@ -4086,6 +4165,7 @@ label.error {
   .article .wrapper .article-wrap .article-info .article-bottom-info > .img-wrap {
     margin: 40px 0;
     border-radius: 20px;
+    height: 77vw;
   }
 }
 .article .wrapper .article-wrap .article-info .article-bottom-info > .img-wrap img {
@@ -4104,19 +4184,22 @@ label.error {
   }
 }
 .article .wrapper .article-wrap .article-info .article-bottom-info .article-info-list li {
+  font-size: 16px;
+  line-height: 140%;
+}
+.article .wrapper .article-wrap .article-info .article-bottom-info .article-info-list li span {
   font-size: 22px;
   line-height: 150%;
 }
 @media (max-width: 1300px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .article-info-list li {
+  .article .wrapper .article-wrap .article-info .article-bottom-info .article-info-list li span {
     font-size: 20px;
     line-height: 140%;
   }
 }
 @media (max-width: 767px) {
-  .article .wrapper .article-wrap .article-info .article-bottom-info .article-info-list li {
+  .article .wrapper .article-wrap .article-info .article-bottom-info .article-info-list li span {
     font-size: 16px;
-    line-height: 24px;
   }
 }
 .article .wrapper .article-wrap .article-info .article-bottom-info .types-stomatitis {
@@ -4794,6 +4877,7 @@ label.error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1440px;
 }
 @media (max-width: 1024px) {
   .map-wrapper .wrapper {
@@ -5065,6 +5149,7 @@ label.error {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 1440px;
 }
 @media (max-width: 1024px) {
   .unique-equipment .wrapper {
@@ -5168,12 +5253,30 @@ label.error {
 .unique-equipment .wrapper .unique-info-right .unique-slider-wrap5 .slider-navigation button.slick-next {
   right: -20px;
 }
+@media (max-width: 767px) {
+  .unique-equipment .wrapper .unique-info-right .unique-slider-wrap .slider-navigation button.slick-next,
+.unique-equipment .wrapper .unique-info-right .unique-slider-wrap2 .slider-navigation button.slick-next,
+.unique-equipment .wrapper .unique-info-right .unique-slider-wrap3 .slider-navigation button.slick-next,
+.unique-equipment .wrapper .unique-info-right .unique-slider-wrap4 .slider-navigation button.slick-next,
+.unique-equipment .wrapper .unique-info-right .unique-slider-wrap5 .slider-navigation button.slick-next {
+    right: 5px;
+  }
+}
 .unique-equipment .wrapper .unique-info-right .unique-slider-wrap .slider-navigation button.slick-prev,
 .unique-equipment .wrapper .unique-info-right .unique-slider-wrap2 .slider-navigation button.slick-prev,
 .unique-equipment .wrapper .unique-info-right .unique-slider-wrap3 .slider-navigation button.slick-prev,
 .unique-equipment .wrapper .unique-info-right .unique-slider-wrap4 .slider-navigation button.slick-prev,
 .unique-equipment .wrapper .unique-info-right .unique-slider-wrap5 .slider-navigation button.slick-prev {
   left: -20px;
+}
+@media (max-width: 767px) {
+  .unique-equipment .wrapper .unique-info-right .unique-slider-wrap .slider-navigation button.slick-prev,
+.unique-equipment .wrapper .unique-info-right .unique-slider-wrap2 .slider-navigation button.slick-prev,
+.unique-equipment .wrapper .unique-info-right .unique-slider-wrap3 .slider-navigation button.slick-prev,
+.unique-equipment .wrapper .unique-info-right .unique-slider-wrap4 .slider-navigation button.slick-prev,
+.unique-equipment .wrapper .unique-info-right .unique-slider-wrap5 .slider-navigation button.slick-prev {
+    left: 5px;
+  }
 }
 .unique-equipment .wrapper .unique-info-right .unique-slider-wrap .slider-navigation button:hover,
 .unique-equipment .wrapper .unique-info-right .unique-slider-wrap2 .slider-navigation button:hover,
@@ -5463,6 +5566,14 @@ label.error {
 
 .benefits {
   margin-top: 80px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+}
+@media (max-width: 767px) {
+  .benefits {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 .benefits .wrapper {
   padding: 60px;
@@ -5630,6 +5741,13 @@ label.error {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 767px) {
+  .our-services .wrapper .our-services-top {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    border-radius: 20px;
+  }
+}
 .our-services .wrapper .our-services-top > p {
   font-weight: 500;
   font-size: 18px;
@@ -5681,6 +5799,11 @@ label.error {
 .our-services .wrapper .our-services-top .tags li a:hover {
   background: #1f1f29;
   color: white;
+}
+.our-services .wrapper .all-services {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
 }
 .our-services .wrapper .all-services .black-btn {
   width: 100%;
@@ -5783,6 +5906,7 @@ label.error {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 1440px;
 }
 @media (max-width: 767px) {
   .clinic-dentistry .wrapper {
@@ -5900,6 +6024,9 @@ label.error {
   .header {
     padding: 20px 0;
   }
+}
+.header .wrapper {
+  max-width: 1440px;
 }
 .header .wrapper .header-top {
   display: -webkit-box;
@@ -6312,6 +6439,9 @@ label.error {
 }
 .header .wrapper .main-menu > li.active a {
   color: rgba(31, 31, 41, 0.3);
+}
+.header .wrapper .main-menu > li.green a {
+  color: #0cb553;
 }
 
 .error-wrap {
@@ -6868,18 +6998,21 @@ label.error {
   list-style-type: disc;
 }
 .sale-wrap .wrapper .sale-information .sale-list li {
+  color: #1f1f29;
+  font-size: 14px;
+}
+.sale-wrap .wrapper .sale-information .sale-list li span {
   font-size: 22px;
   line-height: 150%;
-  color: #1f1f29;
 }
 @media (max-width: 1024px) {
-  .sale-wrap .wrapper .sale-information .sale-list li {
+  .sale-wrap .wrapper .sale-information .sale-list li span {
     font-size: 20px;
     line-height: 140%;
   }
 }
 @media (max-width: 767px) {
-  .sale-wrap .wrapper .sale-information .sale-list li {
+  .sale-wrap .wrapper .sale-information .sale-list li span {
     font-size: 16px;
     line-height: 24px;
   }
@@ -7032,6 +7165,7 @@ label.error {
 }
 .doctors-wrap .wrapper .tab-content .tab-content-item .personal-items .personal-item .professional {
   margin-bottom: 24px;
+  color: #1f1f29;
 }
 @media (max-width: 1024px) {
   .doctors-wrap .wrapper .tab-content .tab-content-item .personal-items .personal-item .professional {
@@ -7047,6 +7181,8 @@ label.error {
   .doctors-wrap .wrapper .tab-content .tab-content-item .personal-items .personal-item .purple-btn {
     font-size: 14px;
     padding: 12px 20px;
+    opacity: 1;
+    visibility: visible;
   }
 }
 .doctors-wrap .wrapper .tab-content .tab-content-item .personal-items .personal-item .bottom {
@@ -7126,6 +7262,25 @@ label.error {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.doctors-wrap .wrapper .team-professionals .video .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.doctors-wrap .wrapper .team-professionals .video .play img {
+  transition: 0.3s;
+}
+.doctors-wrap .wrapper .team-professionals .video .play:hover img {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.doctors-wrap .wrapper .team-professionals .video .video-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @media (max-width: 1024px) {
   .doctors-wrap .wrapper .team-professionals .video {
@@ -7138,9 +7293,15 @@ label.error {
     border-radius: 20px;
   }
 }
-.doctors-wrap .wrapper .team-professionals .video iframe {
-  width: 100%;
-  height: 100%;
+.doctors-wrap .wrapper .tab-menu {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .doctors-wrap .wrapper .tab-menu {
+    justify-content: flex-start;
+  }
 }
 
 .discount-wrap {
@@ -7926,6 +8087,11 @@ label.error {
 .contacts-info {
   padding-top: 50px;
 }
+@media (max-width: 767px) {
+  .contacts-info {
+    padding-top: 30px;
+  }
+}
 @media (max-width: 1024px) {
   .contacts-info .wrapper {
     padding: 0;
@@ -7935,8 +8101,10 @@ label.error {
   font-weight: 500;
   font-size: 64px;
   line-height: 105%;
-  margin-bottom: 40px;
   color: #1f1f29;
+  max-width: 1400px;
+  margin: 0 auto 40px;
+  width: 100%;
 }
 @media (max-width: 1200px) {
   .contacts-info .wrapper h1 {
@@ -7946,7 +8114,7 @@ label.error {
 @media (max-width: 1024px) {
   .contacts-info .wrapper h1 {
     font-size: 36px;
-    margin-bottom: 24px;
+    margin: 0 auto 24px;
     padding: 0 20px;
   }
 }
@@ -8038,6 +8206,12 @@ label.error {
   font-weight: 500;
   margin-bottom: 10px;
   color: #828286;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .contacts-info .wrapper .contacts-wrap .info span {
+    font-size: 14px;
+  }
 }
 .contacts-info .wrapper .contacts-wrap .info a,
 .contacts-info .wrapper .contacts-wrap .info p {
@@ -8065,6 +8239,16 @@ label.error {
 @media (max-width: 767px) {
   .revievs .wrapper {
     padding: 0;
+  }
+}
+.revievs .wrapper .title-wrap {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto 60px;
+}
+@media (max-width: 767px) {
+  .revievs .wrapper .title-wrap {
+    margin-bottom: 40px;
   }
 }
 .revievs .wrapper h1 {
@@ -8098,7 +8282,6 @@ label.error {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 60px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -8307,7 +8490,7 @@ label.error {
   .write-review .wrapper .write-review-info {
     width: 100%;
     max-width: 600px;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
   }
 }
 @media (max-width: 767px) {
@@ -8473,11 +8656,21 @@ label.error {
     margin-top: 24px;
   }
 }
+.colleagues-slider-wrap .colleagues-slider .personal-item .info-wrap .purple-btn {
+  visibility: hidden;
+  opacity: 0;
+}
 @media (max-width: 767px) {
   .colleagues-slider-wrap .colleagues-slider .personal-item .info-wrap .purple-btn {
     padding: 10px 16px;
     font-size: 14px;
+    visibility: visible;
+    opacity: 1;
   }
+}
+.colleagues-slider-wrap .colleagues-slider .personal-item:hover .purple-btn {
+  visibility: visible;
+  opacity: 1;
 }
 
 .make-appointment-wrapper {
@@ -8578,6 +8771,7 @@ label.error {
 }
 .make-appointment .info-wrap .form p a {
   position: relative;
+  color: #828286;
 }
 .make-appointment .info-wrap .form p a:after {
   content: "";
@@ -8613,6 +8807,9 @@ label.error {
   .certificates {
     padding-top: 50px;
   }
+}
+.certificates .wrapper {
+  max-width: 1440px;
 }
 .certificates .wrapper .main-title {
   text-align: center;
@@ -8723,6 +8920,11 @@ label.error {
 .education {
   margin-top: 90px;
 }
+@media (max-width: 1024px) {
+  .education {
+    margin-top: 40px;
+  }
+}
 .education .wrapper {
   background: #f4f5f6;
   border-radius: 30px;
@@ -8732,6 +8934,7 @@ label.error {
 @media (max-width: 1024px) {
   .education .wrapper {
     padding: 30px 20px;
+    border-radius: 20px;
   }
 }
 .education .wrapper span {
@@ -8820,6 +9023,7 @@ label.error {
   line-height: 150%;
   margin-bottom: 0;
   max-width: 1240px;
+  color: #1f1f29;
 }
 @media (max-width: 1024px) {
   .education .wrapper .accordion-list li .item-body ul li span {
