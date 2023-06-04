@@ -238,6 +238,15 @@ $(document).ready(function () {
     $(".tab-content-item").eq(index).addClass("active");
   });
 
+  $(".tab-menu2 li a").on("click", function (e) {
+    e.preventDefault();
+    $(this).closest(".tab-menu2").find("li").removeClass("active");
+    $(this).closest("li").addClass("active");
+    var index = $(this).closest("li").index();
+    $(".tab-content2 .tab-content-item").removeClass("active");
+    $(".tab-content2 .tab-content-item").eq(index).addClass("active");
+  });
+
   $(".drop-item").on("click", function (e) {
     e.stopPropagation();
     $(this).find(".drop-menu-wrap").toggleClass("open");
@@ -277,6 +286,28 @@ $(document).ready(function () {
     },
   });
 
+  $(".sign-up").validate({
+    rules: {
+      phone: {
+        required: true,
+      },
+      name: {
+        required: true,
+      },
+    },
+  });
+
+  $(".answer-form").validate({
+    rules: {
+      phone: {
+        required: true,
+      },
+      name: {
+        required: true,
+      },
+    },
+  });
+
   $(".phone-number-input").inputmask({
     mask: "+7 (999) 999 - 99 - 99",
   });
@@ -292,5 +323,64 @@ $(document).ready(function () {
     $(el).BeerSlider({
       start: $(el).data("start"),
     });
+  });
+
+  $(".order-call-wrap > .purple2-btn, .order-call-wrap > .phone-icon").on(
+    "click",
+    function (e) {
+      e.stopPropagation();
+      $(this).closest(".order-call-wrap").find(".hide-info").addClass("open");
+      $("body").toggleClass("shadow2");
+    }
+  );
+
+  $(".order-call-wrap .hide-info").on("click", function (e) {
+    e.stopPropagation();
+  });
+
+  $(document).on("click", function () {
+    $(".hide-info").removeClass("open");
+    $(".hide-info2").removeClass("open");
+    $("body").removeClass("shadow2");
+  });
+
+  $(".form").on("submit", function (e) {
+    e.preventDefault();
+    if ($(".form").valid()) {
+      $(this).closest(".hide-info").removeClass("open");
+      $(".hide-info2").addClass("open");
+    }
+  });
+
+  $(".search-wrapper .search-icon").on("click", function (e) {
+    e.stopPropagation();
+    $(this).closest(".search-wrapper").find(".hide-block").addClass("open");
+    $("body").toggleClass("shadow2");
+  });
+
+  $(".search-wrapper").on("click", function (e) {
+    e.stopPropagation();
+  });
+
+  $(document).on("click", function () {
+    $(".hide-block").removeClass("open");
+    $("body").removeClass("shadow2");
+  });
+
+  $(".search-form button").on("click", function () {
+    $(".hide-block").removeClass("open");
+    $("body").removeClass("shadow2");
+  });
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 68) {
+      $(".header").addClass("fixed");
+    } else {
+      $(".header").removeClass("fixed");
+    }
+  });
+
+  $(".search-wrapper .search-form input").on("input", function () {
+    $(".hide2-block").addClass("open");
   });
 });
