@@ -106,7 +106,7 @@ button {
 }
 
 .wrapper {
-  max-width: 1560px;
+  max-width: 1520px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
@@ -1575,7 +1575,7 @@ label.error {
             ul {
               margin-bottom: 24px;
               list-style-type: disc;
-              padding-left: 15px;
+              padding-left: 30px;
               &:last-child {
                 margin-bottom: 0;
               }
@@ -1633,7 +1633,7 @@ label.error {
       position: sticky;
       margin-bottom: 80px;
       position: -webkit-sticky;
-      top: 30px;
+      top: 160px;
       align-self: flex-start;
       padding-top: 16px;
       border-top: 1px solid rgba(31, 31, 41, 0.07);
@@ -1643,7 +1643,7 @@ label.error {
       .content {
         @include flex;
         @include dir-col;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         p {
           font-size: 18px;
           line-height: 130%;
@@ -1781,6 +1781,7 @@ label.error {
           ul {
             margin-bottom: 24px;
             counter-reset: number;
+            padding-left: 10px;
             @media (max-width: 767px) {
               margin-bottom: 16px;
             }
@@ -1836,19 +1837,7 @@ label.error {
         margin-bottom: 24px;
         counter-reset: number2;
         position: relative;
-        &:after {
-          content: "";
-          position: absolute;
-          top: -10px;
-          left: 30px;
-          width: 2px;
-          height: 90%;
-          z-index: -1;
-          background: rgba(128, 0, 255, 0.1);
-          @media (max-width: 767px) {
-            content: none;
-          }
-        }
+
         @media (max-width: 767px) {
           margin-bottom: 16px;
         }
@@ -2673,7 +2662,7 @@ label.error {
   min-width: 330px;
   position: sticky;
   position: -webkit-sticky;
-  top: 30px;
+  top: 160px;
   align-self: flex-start;
   @media (max-width: 1024px) {
     display: none;

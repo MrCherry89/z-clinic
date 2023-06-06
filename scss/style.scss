@@ -11,7 +11,7 @@
     @include flex;
     @include flex-wrap;
     @include justify-between;
-    max-width: 1440px;
+    max-width: 1520px;
     .social-item {
       margin-bottom: 28px;
       background-size: cover;
@@ -712,6 +712,7 @@
     border-radius: 30px;
     padding: 60px;
     padding-right: 0;
+    max-width: 1480px;
     @media (max-width: 1024px) {
       padding: 30px 0 50px 20px;
     }
@@ -1065,7 +1066,7 @@
   }
   .wrapper {
     @include flex;
-    max-width: 1440px;
+    max-width: 1520px;
     @media (max-width: 1024px) {
       @include dir-col;
     }
@@ -1280,7 +1281,7 @@
   .wrapper {
     @include flex;
     @include justify-between;
-    max-width: 1440px;
+    max-width: 1520px;
     @media (max-width: 1024px) {
       @include dir-col;
     }
@@ -1444,6 +1445,7 @@
   }
   .wrapper {
     padding: 60px;
+    max-width: 1480px;
     background: $purple;
     border-radius: 30px;
     @media (max-width: 1400px) {
@@ -1609,7 +1611,7 @@
       }
     }
     .all-services {
-      max-width: 1400px;
+      max-width: 100%;
       margin: 0 auto;
       width: 100%;
       .black-btn {
@@ -1693,7 +1695,7 @@
   .wrapper {
     @include flex;
     @include justify-between;
-    max-width: 1440px;
+    max-width: 1520px;
     @media (max-width: 767px) {
       position: relative;
     }
@@ -1795,7 +1797,7 @@
     padding: 20px 0;
   }
   .wrapper {
-    max-width: 1440px;
+    max-width: 1520px;
     .header-top {
       @include flex;
       @include align-center;
@@ -4072,7 +4074,7 @@
 }
 
 .colleagues-slider-wrap {
-  max-width: 1440px;
+  max-width: 1520px;
   width: 100%;
   margin: 60px auto 100px;
   padding: 0 20px;
@@ -4147,7 +4149,7 @@
 }
 
 .make-appointment-wrapper {
-  max-width: 1440px;
+  max-width: 1520px;
 }
 
 .make-appointment {
@@ -4255,7 +4257,7 @@
     padding-top: 50px;
   }
   .wrapper {
-    max-width: 1440px;
+    max-width: 1520px;
     .main-title {
       text-align: center;
       margin-bottom: 60px;
