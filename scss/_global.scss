@@ -110,6 +110,9 @@ button {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  &.w1440 {
+    max-width: 1440px;
+  }
 }
 
 .main-title {
@@ -373,6 +376,7 @@ label.error {
     .wrapper {
       @include flex;
       @include justify-between;
+      max-width: 1440px;
       @media (max-width: 1024px) {
         @include flex-wrap;
       }
@@ -510,6 +514,7 @@ label.error {
       padding: 40px 20px 30px;
       @include flex;
       position: relative;
+      max-width: 1440px;
       &:after {
         content: "";
         position: absolute;
@@ -690,6 +695,7 @@ label.error {
       display: none;
       @media (max-width: 767px) {
         display: inline-block;
+        opacity: 0.5;
         img {
           transform: rotate(180deg);
         }
@@ -1837,7 +1843,20 @@ label.error {
         margin-bottom: 24px;
         counter-reset: number2;
         position: relative;
-
+        z-index: 0;
+        &:after {
+          content: "";
+          position: absolute;
+          top: -2%;
+          left: 32px;
+          width: 1px;
+          height: 90%;
+          background: #ead4ff;
+          z-index: -1;
+          @media (max-width: 767px) {
+            content: none;
+          }
+        }
         @media (max-width: 767px) {
           margin-bottom: 16px;
         }
@@ -1878,7 +1897,7 @@ label.error {
             width: 64px;
             height: 64px;
             border-radius: 50%;
-            background: rgba(128, 0, 255, 0.1);
+            background: #ead4ff;
             @include flex;
             @include justify-center;
             @include align-center;
