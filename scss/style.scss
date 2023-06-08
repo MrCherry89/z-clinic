@@ -2002,6 +2002,53 @@
         @media (max-width: 1200px) {
           margin: 0;
         }
+        .hide-info3 {
+          position: absolute;
+          top: calc(100% + 20px);
+          right: 0;
+          background: #ffffff;
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.07);
+          border-radius: 24px;
+          z-index: 100;
+          padding: 24px 16px;
+          min-width: 200px;
+          visibility: hidden;
+          text-align: right;
+          opacity: 0;
+          transform: translateY(110%);
+          @media (max-width: 1024px) {
+            right: -15px;
+          }
+          @media (max-width: 767px) {
+            right: -27px;
+          }
+          .phone-mobile,
+          .order-call {
+            font-size: 20px;
+            line-height: 120%;
+            color: $purple;
+            margin-bottom: 16px;
+            border-bottom: 1px dashed rgba(128, 0, 255, 0.2);
+          }
+          .order-call {
+            margin-bottom: 0;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            right: 40px;
+            z-index: 1;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid white;
+          }
+          &.open {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
         .hide-info2 {
           position: absolute;
           top: calc(100% + 20px);
@@ -2016,6 +2063,9 @@
           opacity: 0;
           transform: translateY(110%);
           @media (max-width: 1024px) {
+            right: -15px;
+          }
+          @media (max-width: 767px) {
             right: -27px;
           }
           &.open {
@@ -2067,6 +2117,9 @@
           opacity: 0;
           transform: translateY(110%);
           @media (max-width: 1024px) {
+            right: -15px;
+          }
+          @media (max-width: 767px) {
             right: -27px;
           }
           &.open {
@@ -2446,6 +2499,7 @@
     }
   }
   &.fixed {
+    box-shadow: (0px 2px 18px rgba(#333, 0.1));
     @media (min-width: 1025px) {
       box-shadow: (0px 2px 18px rgba(#333, 0.1));
       padding-bottom: 30px;

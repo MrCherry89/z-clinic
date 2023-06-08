@@ -358,17 +358,37 @@ $(document).ready(function () {
     });
   });
 
-  $(".order-call-wrap > .purple2-btn, .order-call-wrap > .phone-icon").on(
-    "click",
-    function (e) {
-      e.stopPropagation();
-      $(this)
-        .closest(".order-call-wrap")
-        .find(".hide-info")
-        .toggleClass("open");
-      $("body").toggleClass("shadow2");
-    }
-  );
+  $(".order-call-wrap > .hide-info3 .order-call").on("click", function (e) {
+    e.stopPropagation();
+    $(this).closest(".hide-info3").removeClass("open");
+    $(this).closest(".order-call-wrap").find(".hide-info").addClass("open");
+    $("body").addClass("shadow2");
+  });
+
+  $(".order-call-wrap .hide-info3").on("click", function (e) {
+    e.stopPropagation();
+  });
+
+  $(".order-call-wrap > .phone-icon").on("click", function (e) {
+    e.stopPropagation();
+    $(this).closest(".order-call-wrap").find(".hide-info3").addClass("open");
+    $("body").toggleClass("shadow2");
+  });
+
+  $(".order-call-wrap .hide-info3").on("click", function (e) {
+    e.stopPropagation();
+  });
+
+  $(document).on("click", function () {
+    $(".hide-info3").removeClass("open");
+    $("body").removeClass("shadow2");
+  });
+
+  $(".order-call-wrap > .purple2-btn").on("click", function (e) {
+    e.stopPropagation();
+    $(this).closest(".order-call-wrap").find(".hide-info").toggleClass("open");
+    $("body").toggleClass("shadow2");
+  });
 
   $(".order-call-wrap .hide-info").on("click", function (e) {
     e.stopPropagation();
