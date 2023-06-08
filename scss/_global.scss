@@ -10,35 +10,38 @@ html {
   &.overflow {
     overflow: hidden;
   }
-  &.shadow {
-    overflow: hidden;
-    &:before {
-      content: "";
-      z-index: 1;
-      position: absolute;
-      top: 152px;
-      left: 0;
-      width: 100%;
-      height: calc(100% - 152px);
-      background: rgba(0, 0, 0, 0.3);
-      @media (max-width: 1200px) {
-        height: calc(100% - 146px);
-      }
-      @media (max-width: 1024px) {
-        content: none;
+  @media (min-width: 1025px) {
+    &.shadow {
+      overflow: hidden;
+      &:before {
+        content: "";
+        z-index: 1;
+        position: absolute;
+        top: 152px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 152px);
+        background: rgba(0, 0, 0, 0.3);
+        @media (max-width: 1200px) {
+          height: calc(100% - 146px);
+        }
+        @media (max-width: 1024px) {
+          content: none;
+        }
       }
     }
   }
+
   &.shadow2 {
     overflow: hidden;
     &:before {
       content: "";
-      z-index: 1;
+      z-index: 22;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 700vh;
       background: rgba(0, 0, 0, 0.3);
     }
   }

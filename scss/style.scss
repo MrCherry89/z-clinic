@@ -2188,6 +2188,9 @@
             margin-left: 6px;
             margin-top: 2px;
             transition: 0.3s;
+            @media (max-width: 1024px) {
+              display: none;
+            }
             &.rotate {
               transform: rotate(180deg);
             }
@@ -2216,9 +2219,24 @@
             opacity: 0;
             transform: translateX(-100%);
             @media (max-width: 1024px) {
+              padding-left: 12px;
               top: -40px;
               overflow-y: auto;
               width: calc(100% - 100px);
+              background: none;
+              &:before {
+                content: "";
+                background: url(../img/mobile-menu-arrow.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                width: 12px;
+                height: 22px;
+                left: 0;
+                position: absolute;
+                top: 43px;
+                z-index: 10;
+              }
               &::-webkit-scrollbar {
                 width: 0;
               }
@@ -2251,7 +2269,8 @@
               top: 0;
               left: -200%;
               @media (max-width: 1024px) {
-                content: none;
+                width: calc(100% - 12px);
+                left: 12px;
               }
             }
             .sub-menu {
@@ -2431,6 +2450,7 @@
       box-shadow: (0px 2px 18px rgba(#333, 0.1));
       padding-bottom: 30px;
       padding-top: 15px;
+      transition: 0.3s;
       .main-menu {
         margin-left: 70px;
         margin-top: -63px;
