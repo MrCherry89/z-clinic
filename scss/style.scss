@@ -710,7 +710,8 @@
   }
 }
 
-.blog-slider {
+.blog-slider,
+.blog-slider2 {
   .item {
     margin-right: 28px;
     width: 450px;
@@ -1141,7 +1142,7 @@
           }
 
           &::-webkit-scrollbar-track {
-            background: rgba($purple, 0.5);
+            background: #f4f5f6;
             width: 3px;
             @media (max-width: 1024px) {
               width: 0;
@@ -1149,7 +1150,7 @@
           }
 
           &::-webkit-scrollbar-thumb {
-            background: $purple;
+            background: #828286;
             width: 3px;
             @media (max-width: 1024px) {
               width: 0;
@@ -1821,9 +1822,7 @@
   background: white;
   width: 100%;
   z-index: 100;
-  &.fixed {
-    box-shadow: (0px 2px 18px rgba(#333, 0.1));
-  }
+
   @media (max-width: 1024px) {
     padding: 20px 0;
   }
@@ -1838,6 +1837,9 @@
       }
       @media (max-width: 1024px) {
         margin-bottom: 0;
+      }
+      .logo-fixed {
+        display: none;
       }
       .logo {
         margin-right: 80px;
@@ -2143,7 +2145,7 @@
       @media (max-width: 1024px) {
         overflow: hidden;
         position: absolute;
-        top: 76px;
+        top: 74px;
         background: white;
         z-index: 10;
         padding: 24px 20px;
@@ -2421,6 +2423,47 @@
             color: #0cb553;
           }
         }
+      }
+    }
+  }
+  &.fixed {
+    @media (min-width: 1025px) {
+      box-shadow: (0px 2px 18px rgba(#333, 0.1));
+      padding-bottom: 30px;
+      padding-top: 15px;
+      .main-menu {
+        margin-left: 70px;
+        margin-top: -63px;
+      }
+      .header-top {
+        min-height: 56px;
+        .logo-fixed {
+          display: block;
+        }
+        .logo {
+          display: none;
+        }
+        .search-wrapper {
+          margin-left: 30px;
+        }
+        .order-call-wrap {
+          margin-left: 30px;
+        }
+        p,
+        .address {
+          display: none;
+        }
+        .phone {
+          margin-left: auto;
+        }
+      }
+    }
+    @media (max-width: 1360px) {
+      .phone {
+        display: none;
+      }
+      .search-wrapper {
+        margin-left: auto !important;
       }
     }
   }

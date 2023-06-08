@@ -39,6 +39,28 @@ $(document).ready(function () {
     ),
   });
 
+  $(".blog-slider2").slick({
+    dots: false,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    variableWidth: true,
+    prevArrow: $(
+      ".blog-slider-wrap .title-wrap .slider-navigation .slick-prev"
+    ),
+    nextArrow: $(
+      ".blog-slider-wrap .title-wrap .slider-navigation .slick-next"
+    ),
+    asNavFor: ".blog-slider-preview",
+  });
+  $(".blog-slider-preview").slick({
+    dots: false,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    fade: true,
+  });
+
   $(".colleagues-slider").slick({
     dots: false,
     infinite: true,
