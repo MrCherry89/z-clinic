@@ -360,7 +360,7 @@ $(document).ready(function () {
 
   $(".order-call-wrap > .hide-info3 .order-call").on("click", function (e) {
     e.stopPropagation();
-    $(this).closest(".hide-info3").removeClass("open");
+    $(".hide-info").removeClass("open");
     $(this).closest(".order-call-wrap").find(".hide-info").addClass("open");
     $("body").addClass("shadow2");
   });
@@ -371,8 +371,9 @@ $(document).ready(function () {
 
   $(".order-call-wrap > .phone-icon").on("click", function (e) {
     e.stopPropagation();
-    $(this).closest(".order-call-wrap").find(".hide-info3").addClass("open");
+    $(this).closest(".order-call-wrap").find(".hide-info3").toggleClass("open");
     $("body").toggleClass("shadow2");
+    $(".hide-info").removeClass("open");
   });
 
   $(".order-call-wrap .hide-info3").on("click", function (e) {
