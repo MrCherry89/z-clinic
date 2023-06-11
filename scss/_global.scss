@@ -698,7 +698,7 @@ label.error {
       display: none;
       @media (max-width: 767px) {
         display: inline-block;
-        opacity: 0.5;
+        opacity: 0.3;
         img {
           transform: rotate(180deg);
         }
@@ -727,7 +727,6 @@ label.error {
         font-size: 18px;
         font-weight: 500;
         transition: 0.3s;
-        background: #f4f5f6;
         border-radius: 8px;
         @media (max-width: 767px) {
           width: 32px;
@@ -1583,14 +1582,28 @@ label.error {
             }
             ul {
               margin-bottom: 24px;
-              list-style-type: disc;
-              padding-left: 30px;
+
               &:last-child {
                 margin-bottom: 0;
               }
               li {
                 font-size: 20px;
                 line-height: 150%;
+                padding-left: 30px;
+                position: relative;
+                &:after {
+                  content: "";
+                  width: 4px;
+                  height: 4px;
+                  border-radius: 50%;
+                  background: $black;
+                  position: absolute;
+                  top: 15px;
+                  left: 15px;
+                  @media (max-width: 1200px) {
+                    top: 12px;
+                  }
+                }
                 @media (max-width: 1200px) {
                   font-size: 16px;
                   line-height: 24px;
@@ -1642,7 +1655,7 @@ label.error {
       position: sticky;
       margin-bottom: 80px;
       position: -webkit-sticky;
-      top: 100px;
+      top: 90px;
       align-self: flex-start;
       padding-top: 16px;
       border-top: 1px solid rgba(31, 31, 41, 0.07);
@@ -1652,18 +1665,18 @@ label.error {
       .content {
         @include flex;
         @include dir-col;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         p {
           font-size: 18px;
-          line-height: 130%;
+          line-height: 120%;
           letter-spacing: -0.01em;
-          margin-bottom: 24px;
+          margin-bottom: 16px;
           color: #828286;
         }
         a {
-          font-size: 20px;
+          font-size: 18px;
           line-height: 120%;
-          margin-bottom: 16px;
+          margin-bottom: 10px;
           position: relative;
           align-self: flex-start;
           &:after {
@@ -1685,6 +1698,11 @@ label.error {
         }
       }
       .request-estimate {
+        padding: 26px;
+        h3 {
+          font-size: 28px;
+          line-height: 120%;
+        }
         .style-img {
           top: -20px;
         }
@@ -1944,20 +1962,20 @@ label.error {
           border: 1px solid rgba(31, 31, 41, 0.07);
           border-radius: 24px;
           @media (max-width: 767px) {
-            border-radius: 20px;
-            &::-webkit-scrollbar {
-              width: 0;
-            }
+            border-radius: 20px 20px 0 0;
+          }
+          &::-webkit-scrollbar {
+            height: 3px;
+          }
 
-            &::-webkit-scrollbar-track {
-              background: transparent;
-              width: 0;
-            }
+          &::-webkit-scrollbar-track {
+            background: #f4f5f6;
+            height: 3px;
+          }
 
-            &::-webkit-scrollbar-thumb {
-              background: transparent;
-              width: 0;
-            }
+          &::-webkit-scrollbar-thumb {
+            background: #828286;
+            height: 3px;
           }
           .table-head {
             @include flex;

@@ -906,7 +906,7 @@ label.error {
 @media (max-width: 767px) {
   .pagination-wrap > button.left {
     display: inline-block;
-    opacity: 0.5;
+    opacity: 0.3;
   }
   .pagination-wrap > button.left img {
     transform: rotate(180deg);
@@ -946,7 +946,6 @@ label.error {
   font-size: 18px;
   font-weight: 500;
   transition: 0.3s;
-  background: #f4f5f6;
   border-radius: 8px;
 }
 @media (max-width: 767px) {
@@ -2192,8 +2191,6 @@ label.error {
 .clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul,
 .service-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul {
   margin-bottom: 24px;
-  list-style-type: disc;
-  padding-left: 30px;
 }
 .clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul:last-child,
 .service-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul:last-child {
@@ -2203,6 +2200,25 @@ label.error {
 .service-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul li {
   font-size: 20px;
   line-height: 150%;
+  padding-left: 30px;
+  position: relative;
+}
+.clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul li:after,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul li:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #1f1f29;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+@media (max-width: 1200px) {
+  .clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul li:after,
+.service-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul li:after {
+    top: 12px;
+  }
 }
 @media (max-width: 1200px) {
   .clinic-prices-wrap .wrapper .service-info .what-implantation .implantation-info .texts ul li,
@@ -2268,7 +2284,7 @@ label.error {
   position: sticky;
   margin-bottom: 80px;
   position: -webkit-sticky;
-  top: 100px;
+  top: 90px;
   align-self: flex-start;
   padding-top: 16px;
   border-top: 1px solid rgba(31, 31, 41, 0.07);
@@ -2288,21 +2304,21 @@ label.error {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .clinic-prices-wrap .wrapper .content-wrap .content p,
 .service-wrap .wrapper .content-wrap .content p {
   font-size: 18px;
-  line-height: 130%;
+  line-height: 120%;
   letter-spacing: -0.01em;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   color: #828286;
 }
 .clinic-prices-wrap .wrapper .content-wrap .content a,
 .service-wrap .wrapper .content-wrap .content a {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 120%;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   position: relative;
   align-self: flex-start;
 }
@@ -2324,6 +2340,15 @@ label.error {
 .clinic-prices-wrap .wrapper .content-wrap .content a:hover:after,
 .service-wrap .wrapper .content-wrap .content a:hover:after {
   border-color: #823af8;
+}
+.clinic-prices-wrap .wrapper .content-wrap .request-estimate,
+.service-wrap .wrapper .content-wrap .request-estimate {
+  padding: 26px;
+}
+.clinic-prices-wrap .wrapper .content-wrap .request-estimate h3,
+.service-wrap .wrapper .content-wrap .request-estimate h3 {
+  font-size: 28px;
+  line-height: 120%;
 }
 .clinic-prices-wrap .wrapper .content-wrap .request-estimate .style-img,
 .service-wrap .wrapper .content-wrap .request-estimate .style-img {
@@ -2708,22 +2733,22 @@ label.error {
 @media (max-width: 767px) {
   .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table,
 .service-wrap .wrapper .comparison-methods .table-wrap .table {
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
   }
-  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar,
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar,
 .service-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar {
-    width: 0;
-  }
-  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar-track,
+  height: 3px;
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar-track,
 .service-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar-track {
-    background: transparent;
-    width: 0;
-  }
-  .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar-thumb,
+  background: #f4f5f6;
+  height: 3px;
+}
+.clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar-thumb,
 .service-wrap .wrapper .comparison-methods .table-wrap .table::-webkit-scrollbar-thumb {
-    background: transparent;
-    width: 0;
-  }
+  background: #828286;
+  height: 3px;
 }
 .clinic-prices-wrap .wrapper .comparison-methods .table-wrap .table .table-head,
 .service-wrap .wrapper .comparison-methods .table-wrap .table .table-head {
@@ -4510,7 +4535,7 @@ label.error {
 }
 @media (max-width: 1300px) {
   .article .wrapper .article-wrap .article-info .article-bottom-info .article-info-list li:after {
-    top: 12px;
+    top: 13px;
   }
 }
 @media (max-width: 767px) {
@@ -4795,7 +4820,7 @@ label.error {
   }
 }
 .global-slider-wrap .title-wrap {
-  max-width: 1300px;
+  max-width: 1270px;
   margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7016,6 +7041,23 @@ label.error {
   margin-bottom: 10px;
   padding-right: 24px;
 }
+@media (max-width: 1024px) {
+  .header .wrapper .main-menu > li.drop-item .drop-menu-wrap .sub-menu > li {
+    position: relative;
+  }
+  .header .wrapper .main-menu > li.drop-item .drop-menu-wrap .sub-menu > li:before {
+    content: "";
+    background: url(../img/sub-menu-arr.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 16px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+}
 .header .wrapper .main-menu > li.drop-item .drop-menu-wrap .sub-menu > li:last-child {
   margin-bottom: 0;
 }
@@ -7051,6 +7093,11 @@ label.error {
   top: 50%;
   margin-top: -10px;
   right: 10px;
+}
+@media (max-width: 1024px) {
+  .header .wrapper .main-menu > li.drop-item .drop-menu-wrap .sub-menu > li > a:after {
+    content: none;
+  }
 }
 @media (min-width: 1025px) {
   .header .wrapper .main-menu > li.drop-item .drop-menu-wrap .sub-menu > li > a:hover {
@@ -9049,6 +9096,9 @@ label.error {
 
 .revievs {
   padding: 50px 0;
+}
+.revievs .wrapper {
+  max-width: 1560px;
 }
 @media (max-width: 767px) {
   .revievs .wrapper {
