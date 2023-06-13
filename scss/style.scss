@@ -2260,6 +2260,12 @@
         }
         &.drop-item {
           position: relative;
+          @media (max-width: 1024px) {
+            .arrow {
+              color: $purple;
+              font-weight: 600;
+            }
+          }
           .drop-menu-wrap {
             position: absolute;
             top: calc(100% + 24px);

@@ -15,12 +15,12 @@ html.shadow {
   body.shadow:before,
 html.shadow:before {
     content: "";
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 152px;
     left: 0;
     width: 100%;
-    height: calc(100% - 152px);
+    height: calc(800% - 152px);
     background: rgba(0, 0, 0, 0.3);
   }
 }
@@ -6957,6 +6957,12 @@ label.error {
 }
 .header .wrapper .main-menu > li.drop-item {
   position: relative;
+}
+@media (max-width: 1024px) {
+  .header .wrapper .main-menu > li.drop-item .arrow {
+    color: #823af8;
+    font-weight: 600;
+  }
 }
 .header .wrapper .main-menu > li.drop-item .drop-menu-wrap {
   position: absolute;
