@@ -49,6 +49,13 @@ html {
 
 body {
   padding-top: 152px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
   @media (max-width: 1200px) {
     padding-top: 146px;
   }
