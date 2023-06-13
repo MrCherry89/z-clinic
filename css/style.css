@@ -6982,8 +6982,8 @@ label.error {
   transition: 0s;
 }
 .header .wrapper .main-menu > li.drop-item .arrow.purple {
-  color: #823af8;
-  font-weight: 600;
+  color: #8000ff;
+  font-weight: 500;
 }
 .header .wrapper .main-menu > li.drop-item .drop-menu-wrap {
   position: absolute;
