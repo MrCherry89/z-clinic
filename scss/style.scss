@@ -1281,8 +1281,18 @@
     @media (max-width: 1024px) {
       margin-top: 50px;
     }
+    .wrapper {
+      @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+      }
+    }
     .map-info {
       padding-bottom: 35px;
+      @media (max-width: 1024px) {
+        margin-top: 40px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
       h3 {
         font-weight: 500;
         font-size: 40px;
@@ -2203,7 +2213,7 @@
         z-index: 10;
         padding: 24px 20px;
         width: 100%;
-        height: calc(100vh - 76px);
+        height: calc(100vh - 74px);
         right: 0;
         transition: 0.3s;
         visibility: hidden;
@@ -2260,12 +2270,14 @@
         }
         &.drop-item {
           position: relative;
-          @media (max-width: 1024px) {
-            .arrow {
+          .arrow {
+            transition: 0s;
+            &.purple {
               color: $purple;
               font-weight: 600;
             }
           }
+
           .drop-menu-wrap {
             position: absolute;
             top: calc(100% + 24px);
@@ -2597,6 +2609,9 @@
       }
       @media (max-width: 767px) {
         padding: 0;
+        width: auto;
+        min-width: auto;
+        max-width: 400px;
       }
       h1 {
         font-weight: 500;
@@ -4198,7 +4213,7 @@
     .write-review-info {
       border: 1px solid rgba(31, 31, 41, 0.17);
       border-radius: 30px;
-      padding: 60px;
+      padding: 60px 50px;
       width: calc((100% - 50px) / 2);
       @media (max-width: 1200px) {
         padding: 40px;
@@ -4228,6 +4243,16 @@
         width: 100%;
         @include flex;
         @include dir-col;
+        p {
+          font-size: 14px;
+          line-height: 17px;
+          margin-top: 20px;
+          color: #828286;
+          a {
+            color: #828286;
+            border-bottom: 1px dashed rgba(31, 31, 41, 0.2);
+          }
+        }
         .input-wrap {
           margin-bottom: 20px;
           input,
@@ -4339,8 +4364,12 @@
           }
         }
         .bottom {
+          @include align-center;
           @media (max-width: 767px) {
             margin-top: 24px;
+          }
+          .year {
+            margin-bottom: 0;
           }
         }
         .purple-btn {
@@ -4474,6 +4503,9 @@
   }
   .wrapper {
     max-width: 1520px;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
     .main-title {
       text-align: center;
       margin-bottom: 60px;
@@ -4484,6 +4516,7 @@
       }
       @media (max-width: 767px) {
         text-align: left;
+        margin-left: 15px;
       }
     }
     .certificates-slider-wrap {
@@ -4586,6 +4619,9 @@
           @media (max-width: 1024px) {
             width: 300px;
             height: 200px;
+          }
+          @media (max-width: 767px) {
+            margin: 0 10px;
           }
           img {
             border-radius: 14px;

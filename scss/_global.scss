@@ -113,6 +113,9 @@ button {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  @media (max-width: 500px) {
+    padding: 0 15px;
+  }
   &.w1440 {
     max-width: 1440px;
   }
@@ -489,7 +492,7 @@ label.error {
             }
           }
           @media (max-width: 767px) {
-            font-size: 18px;
+            font-size: 17px;
           }
         }
         .phone {
@@ -506,7 +509,7 @@ label.error {
             margin-bottom: 20px;
           }
           @media (max-width: 767px) {
-            font-size: 18px;
+            font-size: 17px;
           }
         }
       }
@@ -1375,7 +1378,7 @@ label.error {
             font-size: 20px;
             line-height: 120%;
             text-decoration: line-through;
-            color: #828286;
+            color: #b6b6b6;
             white-space: nowrap;
             @media (max-width: 1200px) {
               font-size: 18px;
@@ -1507,6 +1510,7 @@ label.error {
         .img-wrap {
           width: 50%;
           border-radius: 20px;
+          overflow: hidden;
           @media (max-width: 767px) {
             width: 100%;
             margin-top: 24px;
@@ -1514,6 +1518,7 @@ label.error {
           }
           img {
             width: 100%;
+            border-radius: 20px;
           }
         }
       }
@@ -2587,6 +2592,7 @@ label.error {
       max-width: 250px;
       a {
         color: #828286;
+        border-bottom: 1px dashed rgba(31, 31, 41, 0.2);
       }
     }
   }

@@ -92,7 +92,6 @@ $(document).ready(function () {
         settings: {
           variableWidth: true,
           slidesToShow: 1,
-          centerMode: false,
           centerPadding: "0px",
         },
       },
@@ -282,6 +281,9 @@ $(document).ready(function () {
     $(this).find(".arrow img").toggleClass("rotate");
     if ($(window).width() >= 1025) {
       $("body").toggleClass("shadow");
+    }
+    if ($(window).width() <= 1025) {
+      $(this).find(".arrow").toggleClass("purple");
     }
   });
 
